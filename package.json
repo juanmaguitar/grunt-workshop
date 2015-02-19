@@ -1,0 +1,18 @@
+{
+  "name": "shower",
+  "version": "1.0.0",
+  "description": "Follow [@shower_me](https://twitter.com/shower_me) for support and updates",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-shower-markdown": "^0.2.0",
+    "shower-core": "^1.0.7",
+    "shower-ribbon": "^1.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
