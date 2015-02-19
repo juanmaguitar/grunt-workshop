@@ -1,10 +1,18 @@
+/*
+npm config set init.author.name "JuanMa Garrido"
+npm config set init.author.email JuanMa.Garrido@gmail.com
+npm config set init.author.url http://apuntesjs.com
+npm config set init.license MIT
+*/
 {
-  "name": "shower",
+  "name": "grunt-workshop",
   "version": "1.0.0",
   "description": "Follow [@shower_me](https://twitter.com/shower_me) for support and updates",
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-shower-markdown": "^0.2.0",
     "shower-core": "^1.0.7",
     "shower-ribbon": "^1.0.11"
@@ -13,6 +21,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "JuanMa Garrido <JuanMa.Garrido@gmail.com> (http://apuntesjs.com/)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanmaguitar/grunt-workshop.git"
+  },
+  "keywords": [
+    "grunt",
+    "workshop",
+    "slides",
+    "markdown",
+    "html",
+    "shower"
+  ],
+  "bugs": {
+    "url": "https://github.com/juanmaguitar/grunt-workshop/issues"
+  },
+  "homepage": "https://github.com/juanmaguitar/grunt-workshop"
 }

@@ -1,25 +1,43 @@
 module.exports = function(grunt) {
-    grunt.initConfig({
-        shower: {
-            index: {
-                title: 'Test presentation',
-                src: 'src/index.md',
-                styles: 'src/styles.css'
-                /*scripts: [
-                    'libs/highlight.js',
-                    'src/scripts.js'
-                ]*/
-            }
-        },
-        watch: {
-            shower: {
-                files: 'src/*',
-                tasks: 'shower'
-            }
-        }
-    });
 
-    grunt.loadNpmTasks('grunt-shower-markdown');
+	/* watch */
+	/*
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.config('watch', {
+		shower: {
+			files: 'src/*',
+			tasks: 'shower'
+		}
+	});
+*/
 
-    grunt.registerTask('default', ['shower']);
+	/* shower */
+	grunt.loadNpmTasks('grunt-shower-markdown');
+	grunt.config('shower', {
+		index: {
+			title: 'Test presentation',
+			src: 'src/index.md',
+			styles: 'src/styles.css'
+			/*scripts: [
+				'libs/highlight.js',
+				'src/scripts.js'
+			]*/
+			}
+	});
+
+	/* shower */
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.config('connect', {
+		connect: {
+			server: {
+				options: {
+					port: 9001,
+					base: 'www-root'
+				}
+			}
+		}
+	});
+
+	grunt.registerTask('default', ['shower']);
+
 };
