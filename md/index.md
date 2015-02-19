@@ -8,7 +8,7 @@
 ## Title
 ### Subtitle
 
-![Image](pictures/pic.png)
+![Image](pictures/cover.jpg)
 
 
 !SLIDE
@@ -71,4 +71,4 @@ concat: {
 
 ## Image with classes
 
-![](pictures/pony.png) .place .r .b
+![](pictures/picture.jpg) .place .r .b
