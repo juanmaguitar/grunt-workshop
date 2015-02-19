@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Test presentation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=680, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
+	<link rel="stylesheet" href="themes/bright/styles/screen.css">
+	
+		<link rel="stylesheet" href="css/styles.css?1424372362000">
+	
+</head>
+<body class="list">
+	<header class="caption">
+		<h1 id="presentation-title">Presentation Title</h1>
+<p><a href="http://apuntesjs.com">Author</a> and any other content to show above slides.</p>
+<!-- slide 1 --> 
+
+	</header>
+
+	
+	<section class="slide shout cover" id="Cover"><div>
+		<h2>Title</h2>
+<h3>Subtitle</h3>
+<img src="pictures/cover.jpg" alt="Image">
+<!-- slide 2 --> 
+
+	</div></section>
+	
+	<section class="slide class1 class2" id="SlideID"><div>
+		<h2>Slide Title</h2>
+<p class="note">Some HTML</p>
+
+<ul>
+<li>List item one</li>
+<li class="next">Two (delayed)</li>
+<li class="next">Three (delayed)</li>
+</ul>
+<!-- slide 2 --> 
+
+	</div></section>
+	
+	<section class="slide smallcode" id="slide-code"><div>
+		<h2>Code</h2>
+<pre><code class="language-javascript">module.exports = function(grunt) {</code>
+<code>    <mark class="important">grunt.initConfig</mark>({</code>
+<code>        concat: {</code>
+<code>            main: {</code>
+<code>                src: &#39;src/*.js&#39;,</code>
+<code>                dest: &#39;build/scripts.js&#39;</code>
+<code>            }</code>
+<code>        },</code>
+<code>        min: {</code>
+<code>            main: {</code>
+<code>                src: &#39;&lt;config:concat.main.dest&gt;&#39;,</code>
+<code>                dest: &#39;build/scripts.min.js&#39;</code>
+<code>            }</code>
+<code>        }</code>
+<code>    });</code>
+<code>    grunt.registerTask(&#39;default&#39;, &#39;concat min&#39;);</code>
+<code>};</code></pre>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h2>Code example</h2>
+<pre><code><mark>concat</mark>: {</code>
+<code>    main: {</code>
+<code>        text: <mark class="important">&#39;Hello world&#39;</mark></code>
+<code>    }</code>
+<code>}</code></pre>
+	</div></section>
+	
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+
+	
+
+	
+
+	<!-- Shower: http://shwr.me -->
+</body>
+</html>

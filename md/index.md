@@ -1,7 +1,8 @@
-# Title
-		
-[Author](http://sapegin.me)
+# Presentation Title
 
+[Author](http://apuntesjs.com) and any other content to show above slides.
+
+<!-- slide 1 --> 
 
 !SLIDE #Cover shout cover
 
@@ -10,33 +11,27 @@
 
 ![Image](pictures/cover.jpg)
 
+<!-- slide 2 --> 
 
-!SLIDE
+!SLIDE #SlideID class1 class2
 
-## Simple list
+## Slide Title
 
-Some words.
+<p class="note">Some HTML</p>
 
-- First.
-- Second.
-	* One
-	* Two
-- Third.
+- List item one
+-? Two (delayed)
+-? Three (delayed)
 
-## Delayed list
+<!-- slide 2 --> 
 
-- First.
--? Second.
--? Third.
-
-
-!SLIDE smallcode
+!SLIDE #slide-code smallcode
 
 ## Code
 
 ```javascript
 module.exports = function(grunt) {
-	grunt.initConfig({
+	@@@grunt.initConfig@@@({
 		concat: {
 			main: {
 				src: 'src/*.js',
@@ -54,21 +49,14 @@ module.exports = function(grunt) {
 };
 ```
 
-
 !SLIDE
 
-## Code with marks
+## Code example
 
-```javascript
-concat: {
-	@@main: {@@
-		text: @@@'Hello world'@@@
-	@@}@@
+```
+@@concat@@: {
+    main: {
+        text: @@@'Hello world'@@@
+    }
 }
 ```
-
-!SLIDE
-
-## Image with classes
-
-![](pictures/picture.jpg) .place .r .b

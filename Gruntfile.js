@@ -16,9 +16,11 @@ module.exports = function(grunt) {
 	grunt.config('shower', {
 		index: {
 			title: 'Test presentation',
+			styles: 'css/styles.css',
 			src: 'md/index.md',
-			dest: 'www/index.html'
-			}
+			dest: 'index.html',
+			theme: 'themes/bright'
+		}
 	});
 
 	/* shower */
@@ -28,7 +30,12 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: 9001,
-					base: 'www'
+					base: {
+						options: {
+							index: 'index.html',
+							maxAge: 300000
+						}
+					}
 				}
 			}
 		}
