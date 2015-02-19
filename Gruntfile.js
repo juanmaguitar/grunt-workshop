@@ -16,12 +16,8 @@ module.exports = function(grunt) {
 	grunt.config('shower', {
 		index: {
 			title: 'Test presentation',
-			src: 'src/index.md',
-			styles: 'src/styles.css'
-			/*scripts: [
-				'libs/highlight.js',
-				'src/scripts.js'
-			]*/
+			src: 'md/index.md',
+			dest: 'www/index.html'
 			}
 	});
 
@@ -32,7 +28,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: 9001,
-					base: 'www-root'
+					base: 'www'
 				}
 			}
 		}
