@@ -1,6 +1,6 @@
-# Presentation Title
+# Getting started with Grunt
 
-[Author](http://apuntesjs.com) and any other content to show above slides.
+by [JuanMa Garrido](#slide-showterm)
 
 <!-- slide 1 --> 
 
@@ -8,8 +8,6 @@
 
 ## Title
 ### Subtitle
-
-![Image](pictures/cover.jpg)
 
 <!-- slide 2 --> 
 
@@ -23,7 +21,13 @@
 -? Two (delayed)
 -? Three (delayed)
 
-<!-- slide 2 --> 
+<!-- slide 3 --> 
+
+!SLIDE #slide-showterm
+
+<iframe src="http://showterm.io/7b5f8d42ba021511e627e" width="775" height="500"></iframe>
+
+<!-- slide 4 --> 
 
 !SLIDE #slide-code smallcode
 
