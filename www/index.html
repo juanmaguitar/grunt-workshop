@@ -8,13 +8,14 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="www/css/styles.css?1424367094000">
+		<link rel="stylesheet" href="www/css/styles.css?1424418495000">
 	
 </head>
 <body class="list">
 	<header class="caption">
-		<h1 id="title">Title</h1>
-<p><a href="http://sapegin.me">Author</a></p>
+		<h1 id="getting-started-with-grunt">Getting started with Grunt</h1>
+<p>by <a href="#slide-showterm">JuanMa Garrido</a></p>
+<!-- slide 1 --> 
 
 	</header>
 
@@ -22,35 +23,34 @@
 	<section class="slide shout cover" id="Cover"><div>
 		<h2>Title</h2>
 <h3>Subtitle</h3>
-<img src="pictures/cover.jpg" alt="Image">
+<!-- slide 2 --> 
 
 	</div></section>
 	
-	<section class="slide " ><div>
-		<h2>Simple list</h2>
-<p>Some words.</p>
+	<section class="slide class1 class2" id="SlideID"><div>
+		<h2>Slide Title</h2>
+<p class="note">Some HTML</p>
+
 <ul>
-<li>First.</li>
-<li>Second.<ul>
-<li>One</li>
-<li>Two</li>
+<li>List item one</li>
+<li class="next">Two (delayed)</li>
+<li class="next">Three (delayed)</li>
 </ul>
-</li>
-<li>Third.</li>
-</ul>
-<h2>Delayed list</h2>
-<ul>
-<li>First.</li>
-<li class="next">Second.</li>
-<li class="next">Third.</li>
-</ul>
+<!-- slide 3 --> 
 
 	</div></section>
 	
-	<section class="slide smallcode" ><div>
+	<section class="slide " id="slide-showterm"><div>
+		<iframe src="http://showterm.io/7b5f8d42ba021511e627e" width="775" height="500"></iframe>
+
+<!-- slide 4 --> 
+
+	</div></section>
+	
+	<section class="slide smallcode" id="slide-code"><div>
 		<h2>Code</h2>
 <pre><code class="language-javascript">module.exports = function(grunt) {</code>
-<code>    grunt.initConfig({</code>
+<code>    <mark class="important">grunt.initConfig</mark>({</code>
 <code>        concat: {</code>
 <code>            main: {</code>
 <code>                src: &#39;src/*.js&#39;,</code>
@@ -70,19 +70,12 @@
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h2>Code with marks</h2>
-<pre><code class="language-javascript">concat: {</code>
-<code>    <mark>main: {</mark></code>
+		<h2>Code example</h2>
+<pre><code><mark>concat</mark>: {</code>
+<code>    main: {</code>
 <code>        text: <mark class="important">&#39;Hello world&#39;</mark></code>
-<code>    <mark>}</mark></code>
+<code>    }</code>
 <code>}</code></pre>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h2>Image with classes</h2>
-<img src="pictures/picture.jpg" alt="" class="place r b">
-
 	</div></section>
 	
 

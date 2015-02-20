@@ -16,29 +16,20 @@ module.exports = function(grunt) {
 	grunt.config('shower', {
 		index: {
 			title: 'Test presentation',
-			styles: 'css/styles.css',
+			styles: 'www/css/styles.css',
 			src: 'md/index.md',
-			dest: 'index.html',
+			dest: 'www/index.html',
 			theme: 'themes/bright'
 		}
 	});
 
-	/* shower */
+
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.config('connect', {
-		connect: {
-			server: {
-				options: {
-					port: 9001,
-					base: {
-						options: {
-							index: 'index.html',
-							maxAge: 300000
-						}
-					}
-				}
-			}
-		}
+		options: {
+	    port: 3000,
+	    hostname: 'localhost'
+	  }
 	});
 
 	grunt.registerTask('default', ['shower']);
