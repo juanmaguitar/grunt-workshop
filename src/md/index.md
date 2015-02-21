@@ -4,22 +4,26 @@ by [JuanMa Garrido](#slide-showterm)
 
 <!-- slide 1 --> 
 
-!SLIDE #Cover shout cover
+!SLIDE #Cover
 
-## Title
-### Subtitle
+![Grunt Logo](img/grunt-logo.png)
+![Ironhak Logo](img/grunt-logo.png)
+
+## Getting started with GRUNT
 
 <!-- slide 2 --> 
 
 !SLIDE #SlideID class1 class2
 
-## Slide Title
+## What is Grunt?
 
-<p class="note">Some HTML</p>
+> Grunt is a @@task-based@@ @@command line@@ @@build tool@@ for @@JavaScript@@ projects.
 
-- List item one
--? Two (delayed)
--? Three (delayed)
+1. ?A Javascript Task Runner
+1. ?A Build Tool
+1. ?A Command Line (console)
+1. ?Writen in Javascript
+
 
 <!-- slide 3 --> 
 

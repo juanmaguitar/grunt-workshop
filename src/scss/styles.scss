@@ -1,0 +1,46 @@
+#Cover {
+	& {
+		background: url("../img/logo-ironhack-font.png") no-repeat scroll right 410px top 375px #E48632;
+	}
+	& > div {
+		top: 0;
+	}
+	img {
+		position: absolute;
+		top: 150px;
+		left: 100px;
+	}
+	h2,h3 {
+		color: #453015;
+		font-family: "Lato",Helvetica,Arial,sans-serif;
+		position: absolute;
+	}
+	h2 {
+		top: 190px;
+		left: 430px;
+		font-size: 3.2em;
+		font-weight: bolder;
+	}
+	/*
+	h3 {
+		top: 400px;
+		left: 710px;
+		font-size: 1.7em;
+		font-style:italic;
+	}
+	*/
+}
+
+.slide  {
+	& {
+		background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px #FFF;
+	}
+
+}
+
+.smallcode  {
+	pre code {
+		line-height: 1.5;
+		font-size: 14px;
+	}
+}
