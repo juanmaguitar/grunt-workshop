@@ -1,0 +1,136 @@
+/* line 1, ../../src/scss/styles.scss */
+#Cover {
+  /*
+  h3 {
+  	top: 400px;
+  	left: 710px;
+  	font-size: 1.7em;
+  	font-style:italic;
+  }
+  */ }
+  /* line 2, ../../src/scss/styles.scss */
+  #Cover {
+    background: url("../img/logo-ironhack-font.png") no-repeat scroll right 410px top 375px #E48632; }
+  /* line 5, ../../src/scss/styles.scss */
+  #Cover > div {
+    top: 0; }
+  /* line 8, ../../src/scss/styles.scss */
+  #Cover img {
+    position: absolute;
+    top: 150px;
+    left: 100px; }
+  /* line 13, ../../src/scss/styles.scss */
+  #Cover h2, #Cover h3 {
+    color: #453015;
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    position: absolute; }
+  /* line 18, ../../src/scss/styles.scss */
+  #Cover h2 {
+    top: 190px;
+    left: 430px;
+    font-size: 3.2em;
+    font-weight: bolder; }
+
+/* line 35, ../../src/scss/styles.scss */
+#what blockquote {
+  margin-top: 2em;
+  font-size: 2em; }
+
+/* line 41, ../../src/scss/styles.scss */
+#clear-ideas {
+  /* The maximum number of items a single column can handle.  If a column has more items than the maximum defined here, some items won't display. */ }
+  /* line 47, ../../src/scss/styles.scss */
+  #clear-ideas ol {
+    position: relative;
+    margin: 0 0 50px;
+    padding: 0;
+    font-size: 16px; }
+  /* line 54, ../../src/scss/styles.scss */
+  #clear-ideas ol li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    list-style-position: inside;
+    line-height: 1.5; }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+2) {
+    top: 1.5em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+3) {
+    top: 3em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+4) {
+    top: 4.5em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+5) {
+    top: 6em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+6) {
+    top: 7.5em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+7) {
+    top: 9em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+8) {
+    top: 10.5em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+9) {
+    top: 12em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 64, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+10) {
+    top: 13.5em;
+    /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+3):nth-last-child(-n+2) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+4):nth-last-child(-n+3) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+5):nth-last-child(-n+4) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+6):nth-last-child(-n+5) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+7):nth-last-child(-n+6) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+8):nth-last-child(-n+7) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+9):nth-last-child(-n+8) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+10):nth-last-child(-n+9) {
+    position: static;
+    margin-left: 50%; }
+  /* line 70, ../../src/scss/styles.scss */
+  #clear-ideas ol li:nth-child(n+11):nth-last-child(-n+10) {
+    position: static;
+    margin-left: 50%; }
+
+/* line 80, ../../src/scss/styles.scss */
+.slide {
+  background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px #FFF; }
+
+/* line 87, ../../src/scss/styles.scss */
+.smallcode pre code {
+  line-height: 1.5;
+  font-size: 14px; }
