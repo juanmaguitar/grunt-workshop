@@ -52,22 +52,11 @@ by [JuanMa Garrido](#trainer)
 
 ## Clear Ideas
 
-1. ?[Started in 2012](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)from [Boucup](http://bocoup.com/) (Boston)
-1. ?First commit to the project: [Sep 2011](https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd)
-1. ?A Command Line (console)
-1. ?Writen in Javascript
-1. ?A Javascript Task Runner
-1. ?A Build Tool
-1. ?A Command Line (console)
-1. ?Writen in Javascript
-1. ?A Javascript Task Runner
-1. ?A Build Tool
-1. ?A Command Line (console)
-1. ?Writen in Javascript
-1. ?A Javascript Task Runner
-1. ?A Build Tool
-1. ?A Command Line (console)
-1. ?Writen in Javascript
+- ?Grunt is a [command line command](http://gruntjs.com/using-the-cli) that allow us to execute tasks written in Javascript
+- ?With Grunt we can AUTOMATE A LOT: minify, concatenate, uglify, compile (sass, coffeescript), deploy...
+- ?[Started in 2012](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)from [Boucup](http://bocoup.com/) (Boston)
+- ?First commit to the project: [Sep 2011](https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd)
+
 
 <!-- slide 3 --> 
 

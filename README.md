@@ -1,3 +1,4 @@
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ```
 npm config set init.author.name "JuanMa Garrido"
