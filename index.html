@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Test presentation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=680, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
+	<link rel="stylesheet" href="themes/bright/styles/screen.css">
+	
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&090732517354">
+	
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css?4c857ba6aa35">
+	
+		<link rel="stylesheet" href="css/styles.css?755f690ee14d">
+	
+</head>
+<body class="list">
+	<header class="caption">
+		<h1 id="getting-started-with-grunt">Getting started with Grunt</h1>
+<p>by <a href="#slide-showterm">JuanMa Garrido</a></p>
+<!-- slide 1 --> 
+
+	</header>
+
+	
+	<section class="slide " id="Cover"><div>
+		<p><img src="img/grunt-logo.png" alt="Grunt Logo">
+<img src="img/grunt-logo.png" alt="Ironhak Logo"></p>
+<h2>Getting started with GRUNT</h2>
+
+	</div></section>
+	
+	<section class="slide " id="trainer"><div>
+		<!-- slide 2 --> 
+<h2>Teacher: JuanMa Garrido</h2>
+<ul>
+<li><a class="icon-envelope" href="mailto:JuanMa.Garrido@gmail.com" target="_blank">JuanMa.Garrido@gmail.com</a></li>
+<li><a class="icon-twitter" href="https://twitter.com/juanmaguitar" target="_blank">@juanmaguitar</a></li>
+<li><a class="icon-linkedin" href="http://www.linkedin.com/in/juanmagarrido" target="_blank">http://www.linkedin.com/in/juanmagarrido</a></li>
+<li><a class="icon-github"href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
+</ul>
+
+
+	</div></section>
+	
+	<section class="slide class1 class2" id="what"><div>
+		<blockquote>
+<p><a href="http://bocoup.com/weblog/introducing-grunt/">Grunt is a <mark>task-based</mark> <mark>command line</mark> <mark>build tool</mark> for <mark>JavaScript</mark> projects.</a></p>
+</blockquote>
+
+	</div></section>
+	
+	<section class="slide class1 class2" id="clear-ideas"><div>
+		<h2>Clear Ideas</h2>
+<ol>
+<li class="next">A Javascript Task Runner</li>
+<li class="next">A Build Tool</li>
+<li class="next">A Command Line (console)</li>
+<li class="next">Writen in Javascript</li>
+<li class="next">A Javascript Task Runner</li>
+<li class="next">A Build Tool</li>
+<li class="next">A Command Line (console)</li>
+<li class="next">Writen in Javascript</li>
+<li class="next">A Javascript Task Runner</li>
+<li class="next">A Build Tool</li>
+<li class="next">A Command Line (console)</li>
+<li class="next">Writen in Javascript</li>
+<li class="next">A Javascript Task Runner</li>
+<li class="next">A Build Tool</li>
+<li class="next">A Command Line (console)</li>
+<li class="next">Writen in Javascript</li>
+</ol>
+<!-- slide 3 --> 
+
+	</div></section>
+	
+	<section class="slide " id="slide-showterm"><div>
+		<iframe src="http://showterm.io/7b5f8d42ba021511e627e" width="775" height="500"></iframe>
+
+<!-- slide 4 --> 
+
+	</div></section>
+	
+	<section class="slide smallcode" id="slide-code"><div>
+		<h2>Code</h2>
+<pre><code class="language-javascript">module.exports = function(grunt) {</code>
+<code>    <mark class="important">grunt.initConfig</mark>({</code>
+<code>        concat: {</code>
+<code>            main: {</code>
+<code>                src: &#39;src/*.js&#39;,</code>
+<code>                dest: &#39;build/scripts.js&#39;</code>
+<code>            }</code>
+<code>        },</code>
+<code>        min: {</code>
+<code>            main: {</code>
+<code>                src: &#39;&lt;config:concat.main.dest&gt;&#39;,</code>
+<code>                dest: &#39;build/scripts.min.js&#39;</code>
+<code>            }</code>
+<code>        }</code>
+<code>    });</code>
+<code>    grunt.registerTask(&#39;default&#39;, &#39;concat min&#39;);</code>
+<code>};</code></pre>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h2>Code example</h2>
+<pre><code><mark>concat</mark>: {</code>
+<code>    main: {</code>
+<code>        text: <mark class="important">&#39;Hello world&#39;</mark></code>
+<code>    }</code>
+<code>}</code></pre>
+	</div></section>
+	
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+
+	
+
+	
+
+	<!-- Shower: http://shwr.me -->
+</body>
+</html>
