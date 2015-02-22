@@ -1,8 +1,8 @@
 # Getting started with Grunt
 
-by [JuanMa Garrido](#slide-showterm)
+by [JuanMa Garrido](#trainer)
 
-<!-- slide 1 --> 
+<!-- ****** SLIDE 1 ****** --> 
 
 !SLIDE #Cover
 
@@ -11,19 +11,63 @@ by [JuanMa Garrido](#slide-showterm)
 
 ## Getting started with GRUNT
 
-<!-- slide 2 --> 
+<!-- ****** SLIDE 2 ****** --> 
 
-!SLIDE #SlideID class1 class2
+!SLIDE #trainer
 
-## What is Grunt?
+##Teacher: JuanMa Garrido
+ 
+<ul>
+<li><a class="icon-envelope" href="mailto:JuanMa.Garrido@gmail.com" target="_blank">JuanMa.Garrido@gmail.com</a></li>
+<li><a class="icon-twitter" href="https://twitter.com/juanmaguitar" target="_blank">@juanmaguitar</a></li>
+<li><a class="icon-linkedin" href="http://www.linkedin.com/in/juanmagarrido" target="_blank">http://www.linkedin.com/in/juanmagarrido</a></li>
+<li><a class="icon-github"href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
+</ul>
+
+<!-- ****** SLIDE 3 ****** --> 
+
+!SLIDE #contents
+
+##Contents
+
+1. What is Grunt?
+1. Clear Ideas about Grunt
+1. Using Grunt
+1. First tasks w/ Grunt
+
+<!-- ****** SLIDE 4 ****** --> 
+
+!SLIDE #what
+
+> Grunt is a (Javascript) Task Runner 
+
+<!-- ****** SLIDE 5 ****** --> 
+
+!SLIDE #what2
 
 > Grunt is a @@task-based@@ @@command line@@ @@build tool@@ for @@JavaScript@@ projects.
 
+
+!SLIDE #clear-ideas class1 class2
+
+## Clear Ideas
+
+1. ?[Started in 2012](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)from [Boucup](http://bocoup.com/) (Boston)
+1. ?First commit to the project: [Sep 2011](https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd)
+1. ?A Command Line (console)
+1. ?Writen in Javascript
 1. ?A Javascript Task Runner
 1. ?A Build Tool
 1. ?A Command Line (console)
 1. ?Writen in Javascript
-
+1. ?A Javascript Task Runner
+1. ?A Build Tool
+1. ?A Command Line (console)
+1. ?Writen in Javascript
+1. ?A Javascript Task Runner
+1. ?A Build Tool
+1. ?A Command Line (console)
+1. ?Writen in Javascript
 
 <!-- slide 3 --> 
 
@@ -68,3 +112,12 @@ module.exports = function(grunt) {
     }
 }
 ```
+
+!SLIDE
+
+##More info
+
+- [Introducing Grunt | Boucup](http://bocoup.com/weblog/introducing-grunt/)
+- [Get Up And Running With Grunt | Smashing Magazine](http://www.smashingmagazine.com/2013/10/29/get-up-running-grunt/)
+- [Meet Grunt: The Build Tool for JavaScript | tutsplus](http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856)
+- [JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli](http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/)

@@ -1,3 +1,25 @@
+.slide {
+	ol,ul {
+		margin: 0 0 48px 30px;
+	}
+}
+
+.section {
+	h1 {
+		margin-top:100px;
+		font-size:4em;
+		text-align: center;
+
+	}
+}
+
+h6 {
+	color: #ccc;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
 #Cover {
 	& {
 		background: url("../img/logo-ironhack-font.png") no-repeat scroll right 410px top 375px #E48632;
@@ -29,6 +51,73 @@
 		font-style:italic;
 	}
 	*/
+}
+
+#trainer {
+	ul {
+		margin-left:90px;
+		li:before {
+			content:'';
+		}
+	}
+
+	a[class|=icon] {
+		font-size: 1.3em;
+		background: none;
+		text-decoration: none;
+		width:auto !important;
+		&:before { margin-right:10px; }
+	}
+}
+
+#what {
+	blockquote {
+		margin-top:1.2em;
+		font-size : 3em;
+	}
+}
+
+#what2 {
+	blockquote {
+		margin-top:2em;
+		font-size :2em;
+	}
+}
+
+.two-columns-list {
+
+	$max-column-items: 10; /* The maximum number of items a single column can handle.  If a column has more items than the maximum defined here, some items won't display. */
+	$line-height: 1.5;
+	$list-font-size: 16px;
+
+	ol {
+	  position: relative;
+	  margin: 0 0 50px;
+	  padding: 0;
+	  font-size: $list-font-size;
+	}
+
+	ol li {
+	  position: absolute;
+	  margin: 0;
+	  padding: 0;
+	  width: 50%;
+	  list-style-position: inside;
+	  line-height: $line-height;
+	}
+
+	@for $i from 2 through $max-column-items{
+		ol li:nth-child( n+#{$i} ) {
+			top: $line-height * ($i - 1) + em; /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/
+		}
+	}
+
+	@for $i from 2 through $max-column-items {
+		ol li:nth-child(n+#{$i + 1}):nth-last-child(-n+#{$i}) {
+			position: static;
+			margin-left: 50%;
+		}
+	}
 }
 
 .slide  {
