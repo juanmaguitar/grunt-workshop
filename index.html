@@ -8,11 +8,11 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&c0f87ed90d1b">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&fdd910636374">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css?63b1e99433f2">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css?4208d92eb4f0">
 	
-		<link rel="stylesheet" href="css/styles.css?031ff6ac850b">
+		<link rel="stylesheet" href="css/styles.css?f4f7e0df2228">
 	
 </head>
 <body class="list">
@@ -69,57 +69,103 @@
 		<blockquote>
 <p>Grunt is a <mark>task-based</mark> <mark>command line</mark> <mark>build tool</mark> for <mark>JavaScript</mark> projects.</p>
 </blockquote>
+<!-- ****** SLIDE 6 ****** --> 
 
 	</div></section>
 	
-	<section class="slide class1 class2" id="clear-ideas"><div>
+	<section class="slide clear-ideas" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next">Grunt is a <a href="http://gruntjs.com/using-the-cli">command line command</a> that allow us to execute tasks written in Javascript</li>
-<li class="next">With Grunt we can AUTOMATE A LOT: minify, concatenate, uglify, compile (sass, coffeescript), deploy...</li>
-<li class="next"><a href="http://bocoup.com/weblog/introducing-grunt/">Started in 2012</a> by <a href="http://twitter.com/cowboy">Ben Allman </a>from <a href="http://bocoup.com/">Boucup</a> (Boston)</li>
+<li class="next">Grunt is a <a href="http://gruntjs.com/using-the-cli"><mark>command line</mark> command</a> that allow us to execute <mark>tasks written in Javascript</mark></li>
+<li class="next"><strong>Productivity</strong>: with Grunt we can <mark>automate</mark> everything in the client side: minify, concatenate, uglify, transcompile, deploy...</li>
+<li class="next"><strong>Community</strong>: more than <a href="https://www.npmjs.com/search?q=grunt">11000 grunt plugins</a> available  at NPM</li>
+<li class="next"><strong>Transcompilation</strong>: Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)</li>
+</ul>
+<!-- ****** SLIDE 7 ****** --> 
+
+	</div></section>
+	
+	<section class="slide clear-ideas" ><div>
+		<h2>Clear Ideas</h2>
+<ul>
+<li class="next"><a href="http://bocoup.com/weblog/introducing-grunt/">Started in <mark>2012</mark></a> by <a href="http://twitter.com/cowboy">Ben Allman </a>from <a href="http://bocoup.com/">Boucup</a> (Boston)</li>
 <li class="next">First commit to the project: <a href="https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd">Sep 2011</a></li>
 </ul>
-<!-- slide 3 --> 
+<!-- ****** SLIDE 8 ****** --> 
 
 	</div></section>
 	
-	<section class="slide " id="slide-showterm"><div>
-		<iframe src="http://showterm.io/7b5f8d42ba021511e627e" width="775" height="500"></iframe>
-
-<!-- slide 4 --> 
+	<section class="slide first-tasks smallcode" ><div>
+		<h2>First tasks w/ Grunt (1)</h2>
+<pre><code>$ mkdir project</code>
+<code>$ cd project/</code>
+<code>$ mkdir src</code>
+<code>$ npm init</code>
+<code>$ npm install <mark>--save-dev</mark> grunt</code>
+<code>$ vi Gruntfile.js</code>
+<code>    module.exports = function(grunt) {</code>
+<code>        <mark class="important">grunt.registerTask</mark>(&#39;foo&#39;, function() {</code>
+<code>               grunt.log.writeln(&#39;foo is running...&#39;);</code>
+<code>        });</code>
+<code>    };</code>
+<code>$ grunt foo</code></pre><!-- ****** SLIDE 9 ****** --> 
 
 	</div></section>
 	
-	<section class="slide smallcode" id="slide-code"><div>
-		<h2>Code</h2>
-<pre><code class="language-javascript">module.exports = function(grunt) {</code>
-<code>    <mark class="important">grunt.initConfig</mark>({</code>
-<code>        concat: {</code>
-<code>            main: {</code>
-<code>                src: &#39;src/*.js&#39;,</code>
-<code>                dest: &#39;build/scripts.js&#39;</code>
-<code>            }</code>
-<code>        },</code>
-<code>        min: {</code>
-<code>            main: {</code>
-<code>                src: &#39;&lt;config:concat.main.dest&gt;&#39;,</code>
-<code>                dest: &#39;build/scripts.min.js&#39;</code>
-<code>            }</code>
+	<section class="slide first-tasks smallcode" ><div>
+		<h2>First tasks w/ Grunt (1)</h2>
+<p><a href="http://showterm.io/a177bf1bdcc8033709a69">[+]</a></p>
+<iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
+
+<!-- ****** SLIDE 10 ****** --> 
+
+	</div></section>
+	
+	<section class="slide first-tasks smallcode" ><div>
+		<h2>First tasks w/ Grunt (2)</h2>
+<pre><code>$ mkdir project2</code>
+<code>$ cd project2/</code>
+<code>$ mkdir src</code>
+<code>$ npm config set init.author.name &quot;JuanMa Garrido&quot;</code>
+<code>$ npm config set init.author.email JuanMa.Garrido@gmail.com</code>
+<code>$ npm config set init.author.url http://apuntesjs.com</code>
+<code>$ npm config set init.license MIT</code>
+<code>$ npm init</code>
+<code>$ npm install --save-dev <mark>grunt grunt-contrib-jshint</mark></code></pre><!-- ****** SLIDE 11 ****** --> 
+
+	</div></section>
+	
+	<section class="slide first-tasks smallcode" ><div>
+		<h2>First tasks w/ Grunt (2)</h2>
+<pre><code>$ vi Gruntfile.js</code>
+<code>    module.exports = function(grunt) {</code>
+<code>      <mark class="important">grunt.loadNpmTasks(&#39;grunt-contrib-jshint&#39;);</mark></code>
+<code>      grunt.initConfig({</code>
+<code>        <mark class="important">jshint</mark>: {</code>
+<code>          options: {</code>
+<code>            curly: true,</code>
+<code>            eqeqeq: true</code>
+<code>          },</code>
+<code>          target1: [&#39;Gruntfile.js&#39;, &#39;src/**/*.js&#39;]</code>
 <code>        }</code>
-<code>    });</code>
-<code>    grunt.registerTask(&#39;default&#39;, &#39;concat min&#39;);</code>
-<code>};</code></pre>
+<code>      });</code>
+<code>      <mark class="important">grunt.registerTask(&#39;default&#39;, [&#39;jshint&#39;]);</mark></code>
+<code>    };</code>
+<code>$ grunt</code></pre><!-- ****** SLIDE 11 ****** --> 
 
 	</div></section>
 	
-	<section class="slide " ><div>
-		<h2>Code example</h2>
-<pre><code><mark>concat</mark>: {</code>
-<code>    main: {</code>
-<code>        text: <mark class="important">&#39;Hello world&#39;</mark></code>
-<code>    }</code>
-<code>}</code></pre>
+	<section class="slide first-tasks smallcode" ><div>
+		<h2>First tasks w/ Grunt (2)</h2>
+<p><a href="http://showterm.io/7a31032086f0cc49f3cec">[+]</a></p>
+<iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
+
+
+
+
+
+
+
 	</div></section>
 	
 	<section class="slide " ><div>
