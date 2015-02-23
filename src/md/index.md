@@ -113,9 +113,21 @@ $ cd grunt-workshop
 $ grunt --version
 $ grunt -h
 $ grunt tasks
+$ grunt compass
+$ grunt shower
+$ grunt serve
 
 ```
 
+<!-- ****** SLIDE 9 ****** --> 
+
+!SLIDE first-tasks smallcode
+
+## Using Grunt
+
+[[+]](http://showterm.io/e43deb4a4de942b65022f)
+
+<iframe src="http://showterm.io/e43deb4a4de942b65022f" width="700" height="380"></iframe>
 
 <!-- ######################## FIRST TASKS ######################## --> 
 <!-- ****** SLIDE 8 ****** --> 
