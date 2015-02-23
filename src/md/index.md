@@ -125,32 +125,11 @@ $ grunt serve
 
 ## Using Grunt
 
-[[+]](http://showterm.io/e43deb4a4de942b65022f)
+[[+]](http://showterm.io/5dbd18bd9b0a2c10caf7c)
 
-<iframe src="http://showterm.io/e43deb4a4de942b65022f" width="700" height="380"></iframe>
+<iframe src="http://showterm.io/5dbd18bd9b0a2c10caf7c" width="700" height="380"></iframe>
 
 <!-- ######################## FIRST TASKS ######################## --> 
-<!-- ****** SLIDE 8 ****** --> 
-
-!SLIDE smallcode
-
-## First tasks w/ Grunt (1)
-
-```
-$ mkdir project
-$ cd project/
-$ mkdir src
-$ npm init
-$ npm install @@--save-dev@@ grunt
-$ vi Gruntfile.js
-	module.exports = function(grunt) {
-		@@@grunt.registerTask@@@('foo', function() {
-		       grunt.log.writeln('foo is running...');
-		});
-	};
-$ grunt foo
-```
-
 
 <!-- ****** SLIDE 8 ****** --> 
 
