@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 	grunt.config('availabletasks', {
 		tasks: {
 			options: {
-				showTasks: ['user'],
+				/* showTasks: ['user'], */
 				sort: true
 			}
 		}

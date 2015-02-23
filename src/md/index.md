@@ -2,6 +2,7 @@
 
 by [JuanMa Garrido](#trainer)
 
+<!-- ######################## COVER ######################## --> 
 <!-- ****** SLIDE 1 ****** --> 
 
 !SLIDE #Cover
@@ -11,6 +12,7 @@ by [JuanMa Garrido](#trainer)
 
 ## Getting started with GRUNT
 
+<!-- ######################## TEACHER ######################## --> 
 <!-- ****** SLIDE 2 ****** --> 
 
 !SLIDE #trainer
@@ -24,6 +26,7 @@ by [JuanMa Garrido](#trainer)
 <li><a class="icon-github"href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
 </ul>
 
+<!-- ######################## CONTENTS ######################## --> 
 <!-- ****** SLIDE 3 ****** --> 
 
 !SLIDE #contents
@@ -35,17 +38,45 @@ by [JuanMa Garrido](#trainer)
 1. Using Grunt
 1. First tasks w/ Grunt
 
+<!-- ######################## WHAT IS GRUNT ######################## --> 
 <!-- ****** SLIDE 4 ****** --> 
 
-!SLIDE #what
+!SLIDE what
 
-> Grunt is a (Javascript) Task Runner 
+> Grunt is a @@Tasks Runner@@ 
+
+<!-- ****** SLIDE 4 ****** --> 
+
+!SLIDE what
+
+> Grunt is a @@Build Tool@@ 
+
+<!-- ****** SLIDE 4 ****** --> 
+
+!SLIDE what3
+
+> Grunt is a (@@Javascript@@) @@Tasks Runner@@. Some of these tasks are to @@Build@@ stuff (transcompiling, deploy...)
+
 
 <!-- ****** SLIDE 5 ****** --> 
 
-!SLIDE #what2
+!SLIDE what2
+
+[Originally described](http://bocoup.com/weblog/introducing-grunt/) as:
 
 > Grunt is a @@task-based@@ @@command line@@ @@build tool@@ for @@JavaScript@@ projects.
+
+<!-- ######################## CLEAR IDEAS ######################## --> 
+<!-- ****** SLIDE 6 ****** --> 
+
+!SLIDE clear-ideas
+
+## Clear Ideas
+
+- ?Grunt is (globally) a [@@command line@@](http://gruntjs.com/using-the-cli) 
+- ?Grunt is (locally) a @@node.js module@@ → `module.exports`
+- ?Grunt is a [@@npm package@@](https://www.npmjs.com/package/grunt) 
+- ?The grunt command line (globally) runs the grunt package at `node_modules` (locally).
 
 <!-- ****** SLIDE 6 ****** --> 
 
@@ -53,7 +84,6 @@ by [JuanMa Garrido](#trainer)
 
 ## Clear Ideas
 
-- ?Grunt is a [@@command line@@ command](http://gruntjs.com/using-the-cli) that allow us to execute @@tasks written in Javascript@@
 - ?**Productivity**: with Grunt we can @@automate@@ everything in the client side: minify, concatenate, uglify, transcompile, deploy...
 - ?**Community**: more than [11000 grunt plugins](https://www.npmjs.com/search?q=grunt) available  at NPM
 - ?**Transcompilation**: Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)
@@ -64,8 +94,51 @@ by [JuanMa Garrido](#trainer)
 
 ## Clear Ideas
 
-- ?[Started in @@2012@@](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)from [Boucup](http://bocoup.com/) (Boston)
+- ?[Released in @@March 2012@@](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)
 - ?First commit to the project: [Sep 2011](https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd)
+
+<!-- ######################## USING GRUNT ######################## --> 
+<!-- ****** SLIDE 8 ****** --> 
+
+!SLIDE smallcode
+
+## Using Grunt
+
+```
+$ git --version
+$ node -v
+$ npm -v
+$ git clone https://github.com/juanmaguitar/grunt-workshop.git
+$ cd grunt-workshop
+$ grunt --version
+$ grunt -h
+$ grunt tasks
+
+```
+
+
+<!-- ######################## FIRST TASKS ######################## --> 
+<!-- ****** SLIDE 8 ****** --> 
+
+!SLIDE smallcode
+
+## First tasks w/ Grunt (1)
+
+```
+$ mkdir project
+$ cd project/
+$ mkdir src
+$ npm init
+$ npm install @@--save-dev@@ grunt
+$ vi Gruntfile.js
+	module.exports = function(grunt) {
+		@@@grunt.registerTask@@@('foo', function() {
+		       grunt.log.writeln('foo is running...');
+		});
+	};
+$ grunt foo
+```
+
 
 <!-- ****** SLIDE 8 ****** --> 
 
