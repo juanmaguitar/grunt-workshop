@@ -47,60 +47,114 @@ by [JuanMa Garrido](#trainer)
 
 > Grunt is a @@task-based@@ @@command line@@ @@build tool@@ for @@JavaScript@@ projects.
 
+<!-- ****** SLIDE 6 ****** --> 
 
-!SLIDE #clear-ideas class1 class2
+!SLIDE clear-ideas
 
 ## Clear Ideas
 
-- ?Grunt is a [command line command](http://gruntjs.com/using-the-cli) that allow us to execute tasks written in Javascript
-- ?With Grunt we can AUTOMATE A LOT: minify, concatenate, uglify, compile (sass, coffeescript), deploy...
-- ?[Started in 2012](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)from [Boucup](http://bocoup.com/) (Boston)
+- ?Grunt is a [@@command line@@ command](http://gruntjs.com/using-the-cli) that allow us to execute @@tasks written in Javascript@@
+- ?**Productivity**: with Grunt we can @@automate@@ everything in the client side: minify, concatenate, uglify, transcompile, deploy...
+- ?**Community**: more than [11000 grunt plugins](https://www.npmjs.com/search?q=grunt) available  at NPM
+- ?**Transcompilation**: Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)
+
+<!-- ****** SLIDE 7 ****** --> 
+
+!SLIDE clear-ideas
+
+## Clear Ideas
+
+- ?[Started in @@2012@@](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)from [Boucup](http://bocoup.com/) (Boston)
 - ?First commit to the project: [Sep 2011](https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd)
 
+<!-- ****** SLIDE 8 ****** --> 
 
-<!-- slide 3 --> 
+!SLIDE first-tasks smallcode
 
-!SLIDE #slide-showterm
-
-<iframe src="http://showterm.io/7b5f8d42ba021511e627e" width="775" height="500"></iframe>
-
-<!-- slide 4 --> 
-
-!SLIDE #slide-code smallcode
-
-## Code
-
-```javascript
-module.exports = function(grunt) {
-	@@@grunt.initConfig@@@({
-		concat: {
-			main: {
-				src: 'src/*.js',
-				dest: 'build/scripts.js'
-			}
-		},
-		min: {
-			main: {
-				src: '<config:concat.main.dest>',
-				dest: 'build/scripts.min.js'
-			}
-		}
-	});
-	grunt.registerTask('default', 'concat min');
-};
-```
-
-!SLIDE
-
-## Code example
+## First tasks w/ Grunt (1)
 
 ```
-@@concat@@: {
-    main: {
-        text: @@@'Hello world'@@@
-    }
-}
+$ mkdir project
+$ cd project/
+$ mkdir src
+$ npm init
+$ npm install @@--save-dev@@ grunt
+$ vi Gruntfile.js
+	module.exports = function(grunt) {
+		@@@grunt.registerTask@@@('foo', function() {
+		       grunt.log.writeln('foo is running...');
+		});
+	};
+$ grunt foo
 ```
+
+<!-- ****** SLIDE 9 ****** --> 
+
+!SLIDE first-tasks smallcode
+
+## First tasks w/ Grunt (1)
+
+[[+]](http://showterm.io/a177bf1bdcc8033709a69)
+
+<iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
+
+<!-- ****** SLIDE 10 ****** --> 
+
+!SLIDE first-tasks smallcode
+
+## First tasks w/ Grunt (2)
+
+```
+$ mkdir project2
+$ cd project2/
+$ mkdir src
+$ npm config set init.author.name "JuanMa Garrido"
+$ npm config set init.author.email JuanMa.Garrido@gmail.com
+$ npm config set init.author.url http://apuntesjs.com
+$ npm config set init.license MIT
+$ npm init
+$ npm install --save-dev @@grunt grunt-contrib-jshint@@
+```
+
+<!-- ****** SLIDE 11 ****** --> 
+
+!SLIDE first-tasks smallcode
+
+## First tasks w/ Grunt (2)
+
+```
+$ vi Gruntfile.js
+	module.exports = function(grunt) {
+	  @@@grunt.loadNpmTasks('grunt-contrib-jshint');@@@
+	  grunt.initConfig({
+	    @@@jshint@@@: {
+	      options: {
+	        curly: true,
+	        eqeqeq: true
+	      },
+	      target1: ['Gruntfile.js', 'src/**/*.js']
+	    }
+	  });
+	  @@@grunt.registerTask('default', ['jshint']);@@@
+	};
+$ grunt
+```
+
+
+<!-- ****** SLIDE 11 ****** --> 
+
+!SLIDE first-tasks smallcode
+
+## First tasks w/ Grunt (2)
+
+[[+]](http://showterm.io/7a31032086f0cc49f3cec)
+
+<iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
+
+
+
+
+
 
 !SLIDE
 
