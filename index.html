@@ -8,17 +8,18 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&e1c30125eb97">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&451124656674">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css?f32dfe7a4711">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css?f7de970e8ece">
 	
-		<link rel="stylesheet" href="css/styles.css?466bd7b5e973">
+		<link rel="stylesheet" href="css/styles.css?956b30a89979">
 	
 </head>
 <body class="list">
 	<header class="caption">
 		<h1 id="getting-started-with-grunt">Getting started with Grunt</h1>
 <p>by <a href="#trainer">JuanMa Garrido</a></p>
+<!-- ######################## COVER ######################## --> 
 <!-- ****** SLIDE 1 ****** --> 
 
 	</header>
@@ -28,6 +29,7 @@
 		<p><img src="img/grunt-logo.png" alt="Grunt Logo">
 <img src="img/grunt-logo.png" alt="Ironhak Logo"></p>
 <h2>Getting started with GRUNT</h2>
+<!-- ######################## TEACHER ######################## --> 
 <!-- ****** SLIDE 2 ****** --> 
 
 	</div></section>
@@ -41,6 +43,7 @@
 <li><a class="icon-github"href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
 </ul>
 
+<!-- ######################## CONTENTS ######################## --> 
 <!-- ****** SLIDE 3 ****** --> 
 
 	</div></section>
@@ -53,22 +56,41 @@
 <li>Using Grunt</li>
 <li>First tasks w/ Grunt</li>
 </ol>
+<!-- ######################## WHAT IS GRUNT ######################## --> 
 <!-- ****** SLIDE 4 ****** --> 
 
 	</div></section>
 	
-	<section class="slide " id="what"><div>
+	<section class="slide what" ><div>
 		<blockquote>
-<p>Grunt is a (Javascript) Task Runner </p>
+<p>Grunt is a <mark>Tasks Runner</mark> </p>
+</blockquote>
+<!-- ****** SLIDE 4 ****** --> 
+
+	</div></section>
+	
+	<section class="slide what" ><div>
+		<blockquote>
+<p>Grunt is a <mark>Build Tool</mark> </p>
+</blockquote>
+<!-- ****** SLIDE 4 ****** --> 
+
+	</div></section>
+	
+	<section class="slide what3" ><div>
+		<blockquote>
+<p>Grunt is a (<mark>Javascript</mark>) <mark>Tasks Runner</mark>. Some of these tasks are to <mark>Build</mark> stuff (transcompiling, deploy...)</p>
 </blockquote>
 <!-- ****** SLIDE 5 ****** --> 
 
 	</div></section>
 	
-	<section class="slide " id="what2"><div>
-		<blockquote>
+	<section class="slide what2" ><div>
+		<p><a href="http://bocoup.com/weblog/introducing-grunt/">Originally described</a> as:</p>
+<blockquote>
 <p>Grunt is a <mark>task-based</mark> <mark>command line</mark> <mark>build tool</mark> for <mark>JavaScript</mark> projects.</p>
 </blockquote>
+<!-- ######################## CLEAR IDEAS ######################## --> 
 <!-- ****** SLIDE 6 ****** --> 
 
 	</div></section>
@@ -76,7 +98,18 @@
 	<section class="slide clear-ideas" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next">Grunt is a <a href="http://gruntjs.com/using-the-cli"><mark>command line</mark> command</a> that allow us to execute <mark>tasks written in Javascript</mark></li>
+<li class="next">Grunt is (globally) a <a href="http://gruntjs.com/using-the-cli"><mark>command line</mark></a> </li>
+<li class="next">Grunt is (locally) a <mark>node.js module</mark> → <code>module.exports</code></li>
+<li class="next">Grunt is a <a href="https://www.npmjs.com/package/grunt"><mark>npm package</mark></a> </li>
+<li class="next">The grunt command line (globally) runs the grunt package at <code>node_modules</code> (locally).</li>
+</ul>
+<!-- ****** SLIDE 6 ****** --> 
+
+	</div></section>
+	
+	<section class="slide clear-ideas" ><div>
+		<h2>Clear Ideas</h2>
+<ul>
 <li class="next"><strong>Productivity</strong>: with Grunt we can <mark>automate</mark> everything in the client side: minify, concatenate, uglify, transcompile, deploy...</li>
 <li class="next"><strong>Community</strong>: more than <a href="https://www.npmjs.com/search?q=grunt">11000 grunt plugins</a> available  at NPM</li>
 <li class="next"><strong>Transcompilation</strong>: Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)</li>
@@ -88,10 +121,42 @@
 	<section class="slide clear-ideas" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next"><a href="http://bocoup.com/weblog/introducing-grunt/">Started in <mark>2012</mark></a> by <a href="http://twitter.com/cowboy">Ben Allman </a>from <a href="http://bocoup.com/">Boucup</a> (Boston)</li>
+<li class="next"><a href="http://bocoup.com/weblog/introducing-grunt/">Released in <mark>March 2012</mark></a> by <a href="http://twitter.com/cowboy">Ben Allman </a></li>
 <li class="next">First commit to the project: <a href="https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd">Sep 2011</a></li>
 </ul>
+<!-- ######################## USING GRUNT ######################## --> 
 <!-- ****** SLIDE 8 ****** --> 
+
+	</div></section>
+	
+	<section class="slide smallcode" ><div>
+		<h2>Using Grunt</h2>
+<pre><code>$ git --version</code>
+<code>$ node -v</code>
+<code>$ npm -v</code>
+<code>$ git clone https://github.com/juanmaguitar/grunt-workshop.git</code>
+<code>$ cd grunt-workshop</code>
+<code>$ grunt --version</code>
+<code>$ grunt -h</code>
+<code>$ grunt tasks</code></pre><!-- ######################## FIRST TASKS ######################## --> 
+<!-- ****** SLIDE 8 ****** --> 
+
+	</div></section>
+	
+	<section class="slide smallcode" ><div>
+		<h2>First tasks w/ Grunt (1)</h2>
+<pre><code>$ mkdir project</code>
+<code>$ cd project/</code>
+<code>$ mkdir src</code>
+<code>$ npm init</code>
+<code>$ npm install <mark>--save-dev</mark> grunt</code>
+<code>$ vi Gruntfile.js</code>
+<code>    module.exports = function(grunt) {</code>
+<code>        <mark class="important">grunt.registerTask</mark>(&#39;foo&#39;, function() {</code>
+<code>               grunt.log.writeln(&#39;foo is running...&#39;);</code>
+<code>        });</code>
+<code>    };</code>
+<code>$ grunt foo</code></pre><!-- ****** SLIDE 8 ****** --> 
 
 	</div></section>
 	
