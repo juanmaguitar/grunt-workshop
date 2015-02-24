@@ -8,11 +8,11 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&62dbe83377b5">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&4b2f7f35a632">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css?e11f6fc510fb">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?a330dc4cbcbe">
 	
-		<link rel="stylesheet" href="css/styles.css?4f973d047d25">
+		<link rel="stylesheet" href="css/styles.css?8f3df823fce9">
 	
 </head>
 <body class="list">
@@ -32,7 +32,7 @@
 
 	</div></section>
 	
-	<section class="slide " id="trainer"><div>
+	<section class="slide no-bullet-list" ><div>
 		<h2>Teacher: JuanMa Garrido</h2>
 <ul>
 <li><a class="icon-envelope" href="mailto:JuanMa.Garrido@gmail.com" target="_blank">JuanMa.Garrido@gmail.com</a></li>
@@ -59,7 +59,7 @@
 	
 	<section class="slide what" ><div>
 		<blockquote>
-<p>Grunt is a <mark>Tasks Runner</mark> </p>
+<p>Grunt is a <mark>Task Runner</mark> </p>
 </blockquote>
 
 	</div></section>
@@ -87,13 +87,33 @@
 
 	</div></section>
 	
-	<section class="slide clear-ideas" ><div>
+	<section class="slide clear-ideas small no-bullet-list" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next">Grunt is (globally) a <a href="http://gruntjs.com/using-the-cli"><mark>command line</mark></a> → <code>npm install -g grunt-cli</code></li>
-<li class="next">Grunt is (locally) a <mark>node.js module</mark> → <code>module.exports</code></li>
-<li class="next">Grunt is (locally) a <a href="https://www.npmjs.com/package/grunt"><mark>npm package</mark></a> → <code>npm install --save-dev grunt</code></li>
-<li class="next">The grunt command line (globally) runs the grunt package at <code>node_modules</code> (locally).</li>
+<li class="next"><span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via <a href="https://npmjs.org/">npm</a>, the <a href="http://nodejs.org/">Node.js</a> package manager.</li>
+<li class="next"><span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
+<li class="next"><span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → <code>npm install --save-dev grunt</code></li>
+<li class="next"><span class="icon-terminal"></span>To install dependencies of an exisitng project we use → <code>npm install</code></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list" ><div>
+		<h2>Clear Ideas</h2>
+<ul>
+<li class="next"><span class="icon-cogs"></span>The grunt command line (globally) runs the grunt package at <code>node_modules</code> (locally)</li>
+<li class="next"><span class="icon-file"></span>The tasks are coded (loaded and configured) in Javascript in the file <code><mark class="important">Gruntfile.js</mark></code></li>
+<li class="next"><span class="icon-file"></span>The &quot;plugins&quot; used in the <code>Gruntfile.js</code> are set as project-dependencies in the file <code><mark class="important">package.json</mark></code> →  <code>npm install</code></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list" ><div>
+		<h2>Clear Ideas</h2>
+<ul>
+<li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, concatenate, uglify, transcompile, deploy...</li>
+<li class="next"><span class="icon-globe"></span><strong>Community</strong> →  more than <a href="https://www.npmjs.com/search?q=grunt">11000 grunt plugins</a> available  at NPM</li>
+<li class="next"><span class="icon-code"></span><strong>Transcompilation</strong> →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)</li>
 </ul>
 
 	</div></section>
@@ -101,9 +121,7 @@
 	<section class="slide clear-ideas" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next"><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, concatenate, uglify, transcompile, deploy...</li>
-<li class="next"><strong>Community</strong> →  more than <a href="https://www.npmjs.com/search?q=grunt">11000 grunt plugins</a> available  at NPM</li>
-<li class="next"><strong>Transcompilation</strong> →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)</li>
+<li class="next"><span class="icon-calendar"></span><a href="http://bocoup.com/weblog/introducing-grunt/">Released in <mark>March 2012</mark></a> by <a href="http://twitter.com/cowboy">Ben Allman </a></li>
 </ul>
 
 	</div></section>
@@ -111,8 +129,9 @@
 	<section class="slide clear-ideas" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next"><a href="http://bocoup.com/weblog/introducing-grunt/">Released in <mark>March 2012</mark></a> by <a href="http://twitter.com/cowboy">Ben Allman </a></li>
-<li class="next">First commit to the project: <a href="https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd">Sep 2011</a></li>
+<li class="next"><code>npm install -g grunt-cli</code> →  to install grunt &quot;command-line&quot;</li>
+<li class="next"><code>npm install</code> → (inside the project) to install dependencies</li>
+<li class="next"><code>npm install --save-dev grunt-contrib-jasmine</code> → to install a new &quot;plugin&quot; and add it automatically to <code>package.json</code></li>
 </ul>
 <!-- ######################## USING GRUNT ######################## --> 
 
@@ -125,6 +144,7 @@
 <code>$ npm -v</code>
 <code>$ git clone https://github.com/juanmaguitar/grunt-workshop.git</code>
 <code>$ cd grunt-workshop</code>
+<code>$ npm install</code>
 <code>$ grunt --version</code>
 <code>$ grunt -h</code>
 <code>$ grunt tasks</code>
