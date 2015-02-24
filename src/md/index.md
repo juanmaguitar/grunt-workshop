@@ -13,7 +13,7 @@ by [JuanMa Garrido](#trainer)
 
 <!-- ######################## TEACHER ######################## --> 
 
-!SLIDE #trainer
+!SLIDE no-bullet-list
 
 ##Teacher: JuanMa Garrido
  
@@ -39,7 +39,7 @@ by [JuanMa Garrido](#trainer)
 
 !SLIDE what
 
-> Grunt is a @@Tasks Runner@@ 
+> Grunt is a @@Task Runner@@ 
 
 !SLIDE what
 
@@ -57,29 +57,37 @@ by [JuanMa Garrido](#trainer)
 
 <!-- ######################## CLEAR IDEAS ######################## --> 
 
-!SLIDE clear-ideas
+!SLIDE clear-ideas small no-bullet-list
 
 ## Clear Ideas
 
-- ?Grunt is (globally) a [@@command line@@](http://gruntjs.com/using-the-cli) → `npm install -g grunt-cli`
-- ?Grunt is (locally) a @@node.js module@@ → `module.exports`
-- ?Grunt is (locally) a [@@npm package@@](https://www.npmjs.com/package/grunt) → `npm install --save-dev grunt`
-- ?The grunt command line (globally) runs the grunt package at `node_modules` (locally).
+- ?<span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via [npm](https://npmjs.org/), the [Node.js](http://nodejs.org/) package manager.
+- ?<span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the [Grunt's CLI](http://gruntjs.com/using-the-cli) → `npm install -g grunt-cli`
+- ?<span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → `npm install --save-dev grunt`
+- ?<span class="icon-terminal"></span>To install dependencies of an existing project we use → `npm install`
 
-!SLIDE clear-ideas
-
-## Clear Ideas
-
-- ?**Productivity** →  with Grunt we can @@automate@@ everything in the client side: minify, concatenate, uglify, transcompile, deploy...
-- ?**Community** →  more than [11000 grunt plugins](https://www.npmjs.com/search?q=grunt) available  at NPM
-- ?**Transcompilation** →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)
-
-!SLIDE clear-ideas
+!SLIDE clear-ideas no-bullet-list
 
 ## Clear Ideas
 
-- ?[Released in @@March 2012@@](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)
-- ?First commit to the project: [Sep 2011](https://github.com/gruntjs/grunt/tree/0493335ea6fe2e17cbe236b253139a06eabcbbdd)
+- ?<span class="icon-cogs"></span>The grunt command line (globally) runs the grunt package at `node_modules` (locally)
+- ?<span class="icon-file"></span>The tasks are coded (loaded and configured) in Javascript in the file `@@@Gruntfile.js@@@`
+- ?<span class="icon-file"></span>The "plugins" used in the `Gruntfile.js` are set as project-dependencies in the file `@@@package.json@@@` →  `npm install`
+
+
+!SLIDE clear-ideas no-bullet-list
+
+## Clear Ideas
+
+- ?<span class="icon-briefcase"></span>**Productivity** →  with Grunt we can @@automate@@ everything in the client side: minify, concatenate, uglify, transcompile, deploy...
+- ?<span class="icon-globe"></span>**Community** →  more than [11000 grunt plugins](https://www.npmjs.com/search?q=grunt) available  at NPM
+- ?<span class="icon-code"></span>**Transcompilation** →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)
+
+!SLIDE clear-ideas no-bullet-list
+
+## Clear Ideas
+
+- ?<span class="icon-calendar"></span>[Released in @@March 2012@@](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)
 
 <!-- ######################## USING GRUNT ######################## --> 
 
@@ -93,6 +101,7 @@ $ node -v
 $ npm -v
 $ git clone https://github.com/juanmaguitar/grunt-workshop.git
 $ cd grunt-workshop
+$ npm install
 $ grunt --version
 $ grunt -h
 $ grunt tasks

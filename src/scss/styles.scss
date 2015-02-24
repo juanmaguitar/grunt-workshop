@@ -1,9 +1,32 @@
-.slide {
-	ol,ul {
-		margin: 0 0 48px 30px;
+[class^="icon-"] {
+	font-family: "Open Sans",sans-serif;
+	&:before {
+		font-family: FontAwesome;
 	}
 }
 
+
+a[class|=icon] {
+	font-size: 1.3em;
+	background: none;
+	text-decoration: none;
+	width:auto !important;
+	&:before { margin-right:10px; }
+}
+
+.clear-ideas.small {
+	ol,ul {
+		font-size:.9em;
+	}
+}
+
+.no-bullet-list {
+	ul {
+		li:before {
+			content:'';
+		}
+	}
+}
 .section {
 	h1 {
 		margin-top:100px;
@@ -53,23 +76,7 @@ h6 {
 	*/
 }
 
-#trainer {
-	ul {
-		margin-left:90px;
-		li:before {
-			content:'';
-		}
-	}
 
-	a[class|=icon] {
-		font-size: 1.3em;
-		background: none;
-		text-decoration: none;
-		width:auto !important;
-		&:before { margin-right:10px; }
-	}
-
-}
 
 .what {
 	blockquote {

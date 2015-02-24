@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 			title: 'Test presentation',
 			styles: [
 				'http://fonts.googleapis.com/css?family=Lato',
-				'http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css',
+				'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css',
 				'css/styles.css'
 			],
 			src: '<%= srcFolder %>/md/index.md',
