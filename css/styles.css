@@ -27,14 +27,15 @@
 
 /* line 30, ../../src/scss/styles.scss */
 .not-alone ul ul {
-  margin-top: 10px; }
-  /* line 32, ../../src/scss/styles.scss */
+  margin-top: 10px;
+  margin-left: 30px; }
+  /* line 33, ../../src/scss/styles.scss */
   .not-alone ul ul li {
     position: relative;
     margin-left: -60px;
     margin-bottom: 10px; }
 
-/* line 41, ../../src/scss/styles.scss */
+/* line 42, ../../src/scss/styles.scss */
 .devicons {
   width: 30px;
   height: 30px;
@@ -43,42 +44,51 @@
   margin-left: -45px;
   padding-left: 10px;
   position: relative; }
+  /* line 43, ../../src/scss/styles.scss */
+  .devicons.devicons-java {
+    top: 6px; }
+  /* line 46, ../../src/scss/styles.scss */
+  .devicons.devicons-php {
+    top: 10px; }
   /* line 49, ../../src/scss/styles.scss */
+  .devicons.devicons-python {
+    top: 10px; }
+  /* line 59, ../../src/scss/styles.scss */
   .devicons:before {
     margin-right: 20px; }
 
-/* line 56, ../../src/scss/styles.scss */
+/* line 66, ../../src/scss/styles.scss */
 a[class|=icon] {
   font-size: 1.3em;
   background: none;
   text-decoration: none;
   width: auto !important; }
-  /* line 61, ../../src/scss/styles.scss */
+  /* line 71, ../../src/scss/styles.scss */
   a[class|=icon]:before {
     margin-right: 10px; }
 
-/* line 65, ../../src/scss/styles.scss */
+/* line 75, ../../src/scss/styles.scss */
 .clear-ideas.small ol, .clear-ideas.small ul {
   font-size: .9em; }
 
-/* line 72, ../../src/scss/styles.scss */
+/* line 82, ../../src/scss/styles.scss */
 .no-bullet-list ul > li:before {
   content: ''; }
 
-/* line 78, ../../src/scss/styles.scss */
+/* line 88, ../../src/scss/styles.scss */
 .section h1 {
   margin-top: 100px;
   font-size: 4em;
   text-align: center; }
 
-/* line 86, ../../src/scss/styles.scss */
+/* line 96, ../../src/scss/styles.scss */
 h6 {
   color: #ccc;
   position: absolute;
   top: 50px;
   left: 50px; }
 
-/* line 93, ../../src/scss/styles.scss */
+/* line 103, ../../src/scss/styles.scss */
 #Cover {
   /*
   h3 {
@@ -88,57 +98,57 @@ h6 {
   	font-style:italic;
   }
   */ }
-  /* line 94, ../../src/scss/styles.scss */
+  /* line 104, ../../src/scss/styles.scss */
   #Cover {
     background: url("../img/logo-ironhack-font.png") no-repeat scroll right 410px top 375px #E48632; }
-  /* line 97, ../../src/scss/styles.scss */
+  /* line 107, ../../src/scss/styles.scss */
   #Cover > div {
     top: 0; }
-  /* line 100, ../../src/scss/styles.scss */
+  /* line 110, ../../src/scss/styles.scss */
   #Cover img {
     position: absolute;
     top: 150px;
     left: 100px; }
-  /* line 105, ../../src/scss/styles.scss */
+  /* line 115, ../../src/scss/styles.scss */
   #Cover h2, #Cover h3 {
     color: #453015;
     font-family: "Lato",Helvetica,Arial,sans-serif;
     position: absolute; }
-  /* line 110, ../../src/scss/styles.scss */
+  /* line 120, ../../src/scss/styles.scss */
   #Cover h2 {
     top: 190px;
     left: 430px;
     font-size: 3.2em;
     font-weight: bolder; }
 
-/* line 129, ../../src/scss/styles.scss */
+/* line 139, ../../src/scss/styles.scss */
 .what blockquote {
   margin-top: 1.2em;
   font-size: 3em; }
 
-/* line 136, ../../src/scss/styles.scss */
+/* line 146, ../../src/scss/styles.scss */
 .what2 blockquote {
   margin-top: 2em;
   font-size: 2em; }
 
-/* line 143, ../../src/scss/styles.scss */
+/* line 153, ../../src/scss/styles.scss */
 .what3 blockquote {
   margin-top: 2em;
   font-size: 2em; }
-  /* line 144, ../../src/scss/styles.scss */
+  /* line 154, ../../src/scss/styles.scss */
   .what3 blockquote p {
     line-height: 1.5em; }
 
-/* line 152, ../../src/scss/styles.scss */
+/* line 162, ../../src/scss/styles.scss */
 .two-columns-list {
   /* The maximum number of items a single column can handle.  If a column has more items than the maximum defined here, some items won't display. */ }
-  /* line 158, ../../src/scss/styles.scss */
+  /* line 168, ../../src/scss/styles.scss */
   .two-columns-list ol {
     position: relative;
     margin: 0 0 50px;
     padding: 0;
     font-size: 16px; }
-  /* line 165, ../../src/scss/styles.scss */
+  /* line 175, ../../src/scss/styles.scss */
   .two-columns-list ol li {
     position: absolute;
     margin: 0;
@@ -146,105 +156,105 @@ h6 {
     width: 50%;
     list-style-position: inside;
     line-height: 1.5; }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+2) {
     top: 1.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+3) {
     top: 3em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+4) {
     top: 4.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+5) {
     top: 6em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+6) {
     top: 7.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+7) {
     top: 9em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+8) {
     top: 10.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+9) {
     top: 12em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 185, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+10) {
     top: 13.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+3):nth-last-child(-n+2) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+4):nth-last-child(-n+3) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+5):nth-last-child(-n+4) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+6):nth-last-child(-n+5) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+7):nth-last-child(-n+6) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+8):nth-last-child(-n+7) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+9):nth-last-child(-n+8) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+10):nth-last-child(-n+9) {
     position: static;
     margin-left: 50%; }
-  /* line 181, ../../src/scss/styles.scss */
+  /* line 191, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+11):nth-last-child(-n+10) {
     position: static;
     margin-left: 50%; }
 
-/* line 189, ../../src/scss/styles.scss */
+/* line 199, ../../src/scss/styles.scss */
 .slide ol, .slide ul {
   margin-bottom: 10px; }
-/* line 192, ../../src/scss/styles.scss */
+/* line 202, ../../src/scss/styles.scss */
 .slide p {
   display: inline; }
-/* line 195, ../../src/scss/styles.scss */
+/* line 205, ../../src/scss/styles.scss */
 .slide {
   background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px #FFF; }
 
-/* line 202, ../../src/scss/styles.scss */
+/* line 212, ../../src/scss/styles.scss */
 .showterm a {
   margin: 0;
   float: right;
   /*		background: none; */ }
 
-/* line 210, ../../src/scss/styles.scss */
+/* line 220, ../../src/scss/styles.scss */
 .smallcode h2 {
   margin-bottom: 25px; }
-/* line 213, ../../src/scss/styles.scss */
+/* line 223, ../../src/scss/styles.scss */
 .smallcode pre {
   margin-left: 50px; }
-  /* line 215, ../../src/scss/styles.scss */
+  /* line 225, ../../src/scss/styles.scss */
   .smallcode pre code {
     line-height: 1.5;
     font-size: 14px; }
-/* line 221, ../../src/scss/styles.scss */
+/* line 231, ../../src/scss/styles.scss */
 .smallcode.smaller pre code {
   font-size: 12px; }
