@@ -13,7 +13,7 @@ by [JuanMa Garrido](#trainer)
 
 <!-- ######################## TEACHER ######################## --> 
 
-!SLIDE no-bullet-list
+!SLIDE #trainer no-bullet-list
 
 ##Teacher: JuanMa Garrido
  
@@ -21,7 +21,7 @@ by [JuanMa Garrido](#trainer)
 <li><a class="icon-envelope" href="mailto:JuanMa.Garrido@gmail.com" target="_blank">JuanMa.Garrido@gmail.com</a></li>
 <li><a class="icon-twitter" href="https://twitter.com/juanmaguitar" target="_blank">@juanmaguitar</a></li>
 <li><a class="icon-linkedin" href="http://www.linkedin.com/in/juanmagarrido" target="_blank">http://www.linkedin.com/in/juanmagarrido</a></li>
-<li><a class="icon-github"href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
+<li><a class="icon-github" href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
 </ul>
 
 <!-- ######################## CONTENTS ######################## --> 
@@ -30,10 +30,10 @@ by [JuanMa Garrido](#trainer)
 
 ##Contents
 
-1. What is Grunt?
-1. Clear Ideas about Grunt
-1. Using Grunt
-1. First tasks w/ Grunt
+1. What is Grunt? _(5m)_
+1. Clear Ideas about Grunt _(10m)_
+1. Using Grunt in an existing project _(practice - 10m)_
+1. First tasks w/ Grunt _(practice - 30m)_
 
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -47,13 +47,19 @@ by [JuanMa Garrido](#trainer)
 
 !SLIDE what3
 
-> Grunt is a (@@Javascript@@) @@Tasks Runner@@. Some of these tasks @@Build@@ stuff (transcompiling, deploy...)
+> Grunt is a (@@Javascript@@) @@Task Runner@@. Some of these tasks @@Build@@ stuff (transcompiling, deploy...)
 
 !SLIDE what2
 
 [Originally described](http://bocoup.com/weblog/introducing-grunt/) as:
 
 > Grunt is a @@task-based@@ @@command line@@ @@build tool@@ for @@JavaScript@@ projects.
+
+!SLIDE what2
+
+and for Ruby developers...
+
+> Grunt is like a javascript version of Ruby's [Rake](https://github.com/ruby/rake) and [Capistrano](http://capistranorb.com/)
 
 <!-- ######################## CLEAR IDEAS ######################## --> 
 
@@ -63,25 +69,86 @@ by [JuanMa Garrido](#trainer)
 
 - ?<span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via [npm](https://npmjs.org/), the [Node.js](http://nodejs.org/) package manager.
 - ?<span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the [Grunt's CLI](http://gruntjs.com/using-the-cli) → `npm install -g grunt-cli`
-- ?<span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → `npm install --save-dev grunt`
-- ?<span class="icon-terminal"></span>To install dependencies of an existing project we use → `npm install`
+- ?<span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → `npm install --save-dev grunt grunt-contrib-jshint`
+- ?<span class="icon-terminal"></span>To install Grunt and Grunt-plugins of an existing project we use → `npm install`
 
 !SLIDE clear-ideas no-bullet-list
 
 ## Clear Ideas
 
-- ?<span class="icon-cogs"></span>The grunt command line (globally) runs the grunt package at `node_modules` (locally)
-- ?<span class="icon-file"></span>The tasks are coded (loaded and configured) in Javascript in the file `@@@Gruntfile.js@@@`
-- ?<span class="icon-file"></span>The "plugins" used in the `Gruntfile.js` are set as project-dependencies in the file `@@@package.json@@@` →  `npm install`
+<!-- 
+- ?<span class="icon-cogs"></span>The _grunt command line_ (globally) runs the grunt 'package' at `node_modules` (locally)
+-->
 
+- Main Files:
+	- ?<span class="icon-file"></span>`@@@package.json@@@`: The Grunt runner and Grunt plugins used in the _Gruntfile.js_ are set as project dependencies in this file
+	- ?<span class="icon-file"></span>`@@@Gruntfile.js@@@`: The tasks are defined/configured and grunt plugins are loaded in this file 
+	
+!SLIDE clear-ideas no-bullet-list smallcode
+
+## Clear Ideas
+
+- <span class="icon-code"></span> [sample](http://browsenpm.org/package.json) [`package.json`](https://docs.npmjs.com/files/package.json):
+
+```
+{
+  "name": "my-project-name",
+  "version": "0.1.0",
+  "@@devDependencies@@": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
+}
+```
+
+!SLIDE clear-ideas no-bullet-list smallcode smaller
+
+## Clear Ideas
+
+- <span class="icon-code"></span> [sample](http://gruntjs.com/sample-gruntfile) `Gruntfile.js`:
+
+```
+module.exports = function(grunt) {
+  grunt.@@initConfig@@({
+    jshint: {
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      options: {
+        globals: {
+          jQuery: true
+        }
+      }
+    },
+    watch: {
+      files: ['<%= jshint.files %>'],
+      tasks: ['jshint']
+    }
+  });
+  grunt.@@loadNpmTasks@@('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.@@registerTask@@('default', ['jshint']);
+};
+```
 
 !SLIDE clear-ideas no-bullet-list
 
 ## Clear Ideas
 
-- ?<span class="icon-briefcase"></span>**Productivity** →  with Grunt we can @@automate@@ everything in the client side: minify, concatenate, uglify, transcompile, deploy...
-- ?<span class="icon-globe"></span>**Community** →  more than [11000 grunt plugins](https://www.npmjs.com/search?q=grunt) available  at NPM
-- ?<span class="icon-code"></span>**Transcompilation** →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)
+- ?<span class="icon-briefcase"></span>**Productivity** →  with Grunt we can @@automate@@ everything in the client side: minify, checking, testing, concatenate, uglify, transcompile, deploy...
+- ?<span class="icon-globe"></span>**Community** →  more than [4000 grunt plugins](http://gruntjs.com/plugins) available  at NPM
+- ?<span class="icon-code"></span>**Transcompilation** →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.) 
+
+!SLIDE clear-ideas no-bullet-list not-alone
+
+## Clear Ideas
+
+- Grunt is not alone in the task-manager/build-tools world:
+	- ?<span class="devicons devicons-javascript_badge"></span> [grunt](http://gruntjs.com/), [cake](http://coffeescript.org/documentation/docs/cake.html), [broccoli](https://github.com/broccolijs/broccoli), [gulp]() and [more](https://gist.github.com/callumacrae/9231589)
+	- ?<span class="devicons devicons-ruby"></span> [rake](https://github.com/ruby/rake), [capistrano](http://capistranorb.com/)
+    - ?<span class="devicons devicons-python"></span> [paver](http://paver.github.io/paver/), [pynt](https://github.com/rags/pynt)
+    - ?<span class="devicons devicons-java"></span> [ant](http://ant.apache.org/)
+    - ?<span class="devicons devicons-php"></span> [phing](https://www.phing.info/) 
 
 !SLIDE clear-ideas no-bullet-list
 
@@ -93,7 +160,17 @@ by [JuanMa Garrido](#trainer)
 
 !SLIDE smallcode
 
-## Using Grunt
+## Using Grunt in an existing project
+
+- Steps:
+
+	1. Change to the project's root directory.
+	1. Install project dependencies with `npm install`
+	1. Run Grunt with `grunt`
+
+!SLIDE smallcode
+
+## Using Grunt in an existing project
 
 ```
 $ git --version
@@ -111,9 +188,9 @@ $ grunt serve
 
 ```
 
-!SLIDE first-tasks smallcode
+!SLIDE first-tasks smallcode showterm
 
-## Using Grunt
+## Using Grunt in an existing project
 
 [[+]](http://showterm.io/5dbd18bd9b0a2c10caf7c)
 
@@ -121,9 +198,24 @@ $ grunt serve
 
 <!-- ######################## FIRST TASKS ######################## --> 
 
+!SLIDE smallcode
+
+## Using Grunt in an existing project
+
+- Steps:
+
+    1. Create a _project_ folder (and _src_ subfolder)
+    1. Create a `package.json` intereactively with `npm init`
+    1. Create a simple `Gruntfile.js` (simple task, no plugin loading)
+    1. Launch the task w/ Grunt
+
 !SLIDE first-tasks smallcode
 
 ## First tasks w/ Grunt (1)
+
+	.
+	├── Gruntfile.js
+	├── package.json
 
 ```
 $ mkdir project
@@ -140,7 +232,7 @@ $ vi Gruntfile.js
 $ grunt foo
 ```
 
-!SLIDE first-tasks smallcode
+!SLIDE first-tasks smallcode showterm
 
 ## First tasks w/ Grunt (1)
 
@@ -151,6 +243,12 @@ $ grunt foo
 !SLIDE first-tasks smallcode
 
 ## First tasks w/ Grunt (2)
+
+	.
+	├── Gruntfile.js
+	├── package.json
+	└── src
+	    └── foo.js
 
 ```
 $ mkdir project2
@@ -186,7 +284,7 @@ $ vi Gruntfile.js
 $ grunt
 ```
 
-!SLIDE first-tasks smallcode
+!SLIDE first-tasks smallcode showterm
 
 ## First tasks w/ Grunt (2)
 

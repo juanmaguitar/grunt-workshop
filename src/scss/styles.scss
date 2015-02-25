@@ -5,6 +5,33 @@
 	}
 }
 
+.not-alone {
+	ul {
+		ul {
+			margin-top:10px;
+			li {
+				position:relative;
+				margin-left:-60px;
+				margin-bottom:10px;
+			}
+		}
+	}
+}
+
+.devicons {
+	width: 30px;
+	height:30px;
+	font-size:40px;
+	display:block-inline;
+	margin-left:-45px;
+	padding-left:10px;
+	position:relative;
+	&:before {
+		margin-right:20px;
+	}
+
+
+}
 
 a[class|=icon] {
 	font-size: 1.3em;
@@ -139,17 +166,27 @@ h6 {
 }
 
 .slide  {
+	ol, ul {
+		margin-bottom: 10px;
+	}
+	p {
+		display: inline;
+	}
 	& {
 		background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px #FFF;
 	}
 
 }
 
-.smallcode  {
-	p {
+.showterm {
+	a {
 		margin:0;
 		float:right;
+/*		background: none; */
 	}
+}
+
+.smallcode  {
 	h2 {
 		margin-bottom:25px;
 	}

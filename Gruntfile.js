@@ -16,7 +16,9 @@ module.exports = function(grunt) {
 			styles: [
 				'http://fonts.googleapis.com/css?family=Lato',
 				'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css',
-				'css/styles.css'
+				'//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css',
+				'css/styles.css',
+
 			],
 			src: '<%= srcFolder %>/md/index.md',
 			theme: 'themes/bright'
@@ -82,6 +84,7 @@ module.exports = function(grunt) {
 		},
 		src: [
 			'css/*',
+			'font/*',
 			'img/*',
 			'shower/*',
 			'themes/**/*',
