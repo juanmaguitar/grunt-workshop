@@ -178,23 +178,31 @@ h6 {
     margin-left: 50%; }
 
 /* line 142, ../../src/scss/styles.scss */
+.slide ol, .slide ul {
+  margin-bottom: 10px; }
+/* line 145, ../../src/scss/styles.scss */
+.slide p {
+  display: inline; }
+/* line 148, ../../src/scss/styles.scss */
 .slide {
   background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px #FFF; }
 
-/* line 149, ../../src/scss/styles.scss */
-.smallcode p {
+/* line 155, ../../src/scss/styles.scss */
+.showterm a {
   margin: 0;
-  float: right; }
-/* line 153, ../../src/scss/styles.scss */
+  float: right;
+  /*		background: none; */ }
+
+/* line 163, ../../src/scss/styles.scss */
 .smallcode h2 {
   margin-bottom: 25px; }
-/* line 156, ../../src/scss/styles.scss */
+/* line 166, ../../src/scss/styles.scss */
 .smallcode pre {
   margin-left: 50px; }
-  /* line 158, ../../src/scss/styles.scss */
+  /* line 168, ../../src/scss/styles.scss */
   .smallcode pre code {
     line-height: 1.5;
     font-size: 14px; }
-/* line 164, ../../src/scss/styles.scss */
+/* line 174, ../../src/scss/styles.scss */
 .smallcode.smaller pre code {
   font-size: 12px; }

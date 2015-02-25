@@ -8,11 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&7fbbbb0bd5f0">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&e35d29b18cbf">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?1872ebe0fca7">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?cabbcc11420e">
 	
-		<link rel="stylesheet" href="css/styles.css?146bd3e4506f">
+		<link rel="stylesheet" href="css/font-mfizz.css?9d815ea55317">
+	
+		<link rel="stylesheet" href="css/styles.css?922d32f35174">
 	
 </head>
 <body class="list">
@@ -50,7 +52,7 @@
 <ol>
 <li>What is Grunt?</li>
 <li>Clear Ideas about Grunt</li>
-<li>Using Grunt</li>
+<li>Using Grunt in an existing project</li>
 <li>First tasks w/ Grunt</li>
 </ol>
 <!-- ######################## WHAT IS GRUNT ######################## --> 
@@ -73,7 +75,7 @@
 	
 	<section class="slide what3" ><div>
 		<blockquote>
-<p>Grunt is a (<mark>Javascript</mark>) <mark>Tasks Runner</mark>. Some of these tasks <mark>Build</mark> stuff (transcompiling, deploy...)</p>
+<p>Grunt is a (<mark>Javascript</mark>) <mark>Task Runner</mark>. Some of these tasks <mark>Build</mark> stuff (transcompiling, deploy...)</p>
 </blockquote>
 
 	</div></section>
@@ -82,6 +84,14 @@
 		<p><a href="http://bocoup.com/weblog/introducing-grunt/">Originally described</a> as:</p>
 <blockquote>
 <p>Grunt is a <mark>task-based</mark> <mark>command line</mark> <mark>build tool</mark> for <mark>JavaScript</mark> projects.</p>
+</blockquote>
+
+	</div></section>
+	
+	<section class="slide what2" ><div>
+		<p>And for Ruby developers...</p>
+<blockquote>
+<p>Grunt is a javascript version of Ruby&#39;s <a href="https://github.com/ruby/rake">Rake</a></p>
 </blockquote>
 <!-- ######################## CLEAR IDEAS ######################## --> 
 
@@ -92,28 +102,84 @@
 <ul>
 <li class="next"><span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via <a href="https://npmjs.org/">npm</a>, the <a href="http://nodejs.org/">Node.js</a> package manager.</li>
 <li class="next"><span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
-<li class="next"><span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → <code>npm install --save-dev grunt</code></li>
-<li class="next"><span class="icon-terminal"></span>To install dependencies of an existing project we use → <code>npm install</code></li>
+<li class="next"><span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → <code>npm install --save-dev grunt grunt-contrib-jshint</code></li>
+<li class="next"><span class="icon-terminal"></span>To install Grunt and Grunt-plugins of an existing project we use → <code>npm install</code></li>
 </ul>
 
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list" ><div>
 		<h2>Clear Ideas</h2>
+<!-- 
+- ?<span class="icon-cogs"></span>The _grunt command line_ (globally) runs the grunt 'package' at `node_modules` (locally)
+-->
 <ul>
-<li class="next"><span class="icon-cogs"></span>The grunt command line (globally) runs the grunt package at <code>node_modules</code> (locally)</li>
-<li class="next"><span class="icon-file"></span>The tasks are coded (loaded and configured) in Javascript in the file <code><mark class="important">Gruntfile.js</mark></code></li>
-<li class="next"><span class="icon-file"></span>The &quot;plugins&quot; used in the <code>Gruntfile.js</code> are set as project-dependencies in the file <code><mark class="important">package.json</mark></code> →  <code>npm install</code></li>
+<li>Main Files:<ul>
+<li class="next"><span class="icon-file"></span><code><mark class="important">package.json</mark></code>: The Grunt runner and Grunt plugins used in the <em>Gruntfile.js</em> are set as project dependencies in this file</li>
+<li class="next"><span class="icon-file"></span><code><mark class="important">Gruntfile.js</mark></code>: The tasks are defined/configured and grunt plugins are loaded in this file </li>
+</ul>
+</li>
 </ul>
 
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode" ><div>
+		<h2>Clear Ideas</h2>
+<p><span class="icon-code"></span> <a href="http://browsenpm.org/package.json">sample</a> <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a>:</p>
+<pre><code>{</code>
+<code>  &quot;name&quot;: &quot;my-project-name&quot;,</code>
+<code>  &quot;version&quot;: &quot;0.1.0&quot;,</code>
+<code>  &quot;<mark>devDependencies</mark>&quot;: {</code>
+<code>    &quot;grunt&quot;: &quot;~0.4.5&quot;,</code>
+<code>    &quot;grunt-contrib-jshint&quot;: &quot;~0.10.0&quot;,</code>
+<code>    &quot;grunt-contrib-nodeunit&quot;: &quot;~0.4.1&quot;,</code>
+<code>    &quot;grunt-contrib-uglify&quot;: &quot;~0.5.0&quot;</code>
+<code>  }</code>
+<code>}</code></pre>
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode smaller" ><div>
+		<h2>Clear Ideas</h2>
+<p><span class="icon-code"></span> <a href="http://gruntjs.com/sample-gruntfile">sample</a> <code>Gruntfile.js</code>:</p>
+<pre><code>module.exports = function(grunt) {</code>
+<code>  grunt.<mark>initConfig</mark>({</code>
+<code>    jshint: {</code>
+<code>      files: [&#39;Gruntfile.js&#39;, &#39;src/**/*.js&#39;, &#39;test/**/*.js&#39;],</code>
+<code>      options: {</code>
+<code>        globals: {</code>
+<code>          jQuery: true</code>
+<code>        }</code>
+<code>      }</code>
+<code>    },</code>
+<code>    watch: {</code>
+<code>      files: [&#39;&lt;%= jshint.files %&gt;&#39;],</code>
+<code>      tasks: [&#39;jshint&#39;]</code>
+<code>    }</code>
+<code>  });</code>
+<code>  grunt.<mark>loadNpmTasks</mark>(&#39;grunt-contrib-jshint&#39;);</code>
+<code>  grunt.loadNpmTasks(&#39;grunt-contrib-watch&#39;);</code>
+<code>  grunt.<mark>registerTask</mark>(&#39;default&#39;, [&#39;jshint&#39;]);</code>
+<code>};</code></pre>
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
 <li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, concatenate, uglify, transcompile, deploy...</li>
-<li class="next"><span class="icon-globe"></span><strong>Community</strong> →  more than <a href="https://www.npmjs.com/search?q=grunt">11000 grunt plugins</a> available  at NPM</li>
+<li class="next"><span class="icon-globe"></span><strong>Community</strong> →  more than <a href="http://gruntjs.com/plugins">4000 grunt plugins</a> available  at NPM</li>
 <li class="next"><span class="icon-code"></span><strong>Transcompilation</strong> →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list" ><div>
+		<h2>Clear Ideas</h2>
+<ul>
+<li>Grunt is not alone in the task-manager/build-tools world:<ul>
+<li class="next"><i class="icon-javascript"></i> grunt, gulp</li>
+<li class="next"><span class="icon-file"></span><code><mark class="important">Gruntfile.js</mark></code>: The tasks are defined/configured and grunt plugins are loaded in this file </li>
+</ul>
+</li>
 </ul>
 
 	</div></section>
@@ -128,7 +194,21 @@
 	</div></section>
 	
 	<section class="slide smallcode" ><div>
-		<h2>Using Grunt</h2>
+		<h2>Using Grunt in an existing project</h2>
+<ul>
+<li><p>Steps:</p>
+<ol>
+<li class="next">Change to the project&#39;s root directory.</li>
+<li class="next">Install project dependencies with <code>npm install</code></li>
+<li class="next">Run Grunt with <code>grunt</code></li>
+</ol>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide smallcode" ><div>
+		<h2>Using Grunt in an existing project</h2>
 <pre><code>$ git --version</code>
 <code>$ node -v</code>
 <code>$ npm -v</code>
@@ -143,8 +223,8 @@
 <code>$ grunt serve</code></pre>
 	</div></section>
 	
-	<section class="slide first-tasks smallcode" ><div>
-		<h2>Using Grunt</h2>
+	<section class="slide first-tasks smallcode showterm" ><div>
+		<h2>Using Grunt in an existing project</h2>
 <p><a href="http://showterm.io/5dbd18bd9b0a2c10caf7c">[+]</a></p>
 <iframe src="http://showterm.io/5dbd18bd9b0a2c10caf7c" width="700" height="380"></iframe>
 
@@ -154,7 +234,9 @@
 	
 	<section class="slide first-tasks smallcode" ><div>
 		<h2>First tasks w/ Grunt (1)</h2>
-<pre><code>$ mkdir project</code>
+<pre><code>.</code>
+<code>├── Gruntfile.js</code>
+<code>├── package.json</code></pre><pre><code>$ mkdir project</code>
 <code>$ cd project/</code>
 <code>$ mkdir src</code>
 <code>$ npm init</code>
@@ -168,7 +250,7 @@
 <code>$ grunt foo</code></pre>
 	</div></section>
 	
-	<section class="slide first-tasks smallcode" ><div>
+	<section class="slide first-tasks smallcode showterm" ><div>
 		<h2>First tasks w/ Grunt (1)</h2>
 <p><a href="http://showterm.io/a177bf1bdcc8033709a69">[+]</a></p>
 <iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
@@ -178,7 +260,11 @@
 	
 	<section class="slide first-tasks smallcode" ><div>
 		<h2>First tasks w/ Grunt (2)</h2>
-<pre><code>$ mkdir project2</code>
+<pre><code>.</code>
+<code>├── Gruntfile.js</code>
+<code>├── package.json</code>
+<code>└── src</code>
+<code>    └── foo.js</code></pre><pre><code>$ mkdir project2</code>
 <code>$ cd project2/</code>
 <code>$ mkdir src</code>
 <code>$ npm config set init.author.name &quot;JuanMa Garrido&quot;</code>
@@ -208,7 +294,7 @@
 <code>$ grunt</code></pre>
 	</div></section>
 	
-	<section class="slide first-tasks smallcode" ><div>
+	<section class="slide first-tasks smallcode showterm" ><div>
 		<h2>First tasks w/ Grunt (2)</h2>
 <p><a href="http://showterm.io/7a31032086f0cc49f3cec">[+]</a></p>
 <iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
