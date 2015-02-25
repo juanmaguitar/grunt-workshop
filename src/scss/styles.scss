@@ -1,3 +1,19 @@
+.clear-ideas-gruntfile.smallcode {
+	ul ul li code { font-size:16px; }
+	pre {
+		margin-top:20px;
+		margin-left:100px;
+		code:before { margin:0;}
+	}
+}
+
+#contents {
+	.icon-keyboard:before {
+		margin-left: 52px;
+		margin-right: -15px;
+	}
+}
+
 .slide h2 {
 	font-size:40px;
 }

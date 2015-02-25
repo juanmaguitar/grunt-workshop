@@ -32,9 +32,11 @@ by [JuanMa Garrido](#trainer)
 
 1. What is Grunt? _(5m)_
 1. Clear Ideas about Grunt _(10m)_
-1. Using Grunt in an existing project _(practice - 10m)_
-1. First tasks in a new Grunt project _(practice - 30m)_
+1. <span class="icon-keyboard"></span> Using Grunt in an existing project _(10m)_
+1. <span class="icon-keyboard"></span> Creating my first Grunt project _(10m)_
+1. <span class="icon-keyboard"></span> Loading Grunt plugins _(10m)_
 1. Clear Ideas about Gruntfile.js _(10m)_
+1. <span class="icon-keyboard"></span> Fully functional Grunt project _(...)_
 
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -145,7 +147,7 @@ module.exports = function(grunt) {
 ## Clear Ideas about Grunt
 
 - Grunt is not alone in the task-manager/build-tools world:
-	- ?<span class="devicons devicons-javascript_badge"></span> [grunt](http://gruntjs.com/), [cake](http://coffeescript.org/documentation/docs/cake.html), [broccoli](https://github.com/broccolijs/broccoli), [gulp]() and [more](https://gist.github.com/callumacrae/9231589)
+	- ?<span class="devicons devicons-javascript_badge"></span> [grunt](http://gruntjs.com/), [cake](http://coffeescript.org/documentation/docs/cake.html), [broccoli](https://github.com/broccolijs/broccoli), [gulp](http://gulpjs.com/) and [more](https://gist.github.com/callumacrae/9231589)
 	- ?<span class="devicons devicons-ruby"></span> [rake](https://github.com/ruby/rake), [capistrano](http://capistranorb.com/)
     - ?<span class="devicons devicons-python"></span> [paver](http://paver.github.io/paver/), [pynt](https://github.com/rags/pynt)
     - ?<span class="devicons devicons-java"></span> [ant](http://ant.apache.org/)
@@ -161,7 +163,7 @@ module.exports = function(grunt) {
 
 !SLIDE smallcode no-bullet-list
 
-## Using Grunt in an existing project
+## <span class="icon-keyboard"></span> Using Grunt in an existing project
 
 - @@Steps@@:
 
@@ -171,7 +173,7 @@ module.exports = function(grunt) {
 
 !SLIDE smallcode
 
-## Using Grunt in an existing project
+## <span class="icon-keyboard"></span> Using Grunt in an existing project
 
 ```
 $ git --version
@@ -191,7 +193,7 @@ $ grunt serve
 
 !SLIDE first-tasks smallcode showterm
 
-## Using Grunt in an existing project
+## <span class="icon-keyboard"></span> Using Grunt in an existing project
 
 [[+]](http://showterm.io/5dbd18bd9b0a2c10caf7c)
 
@@ -201,7 +203,7 @@ $ grunt serve
 
 !SLIDE smallcode no-bullet-list
 
-## First tasks in a new Grunt project (1)
+## <span class="icon-keyboard"></span> Creating my first Grunt project
 
 - @@Steps@@:
 
@@ -212,7 +214,7 @@ $ grunt serve
 
 !SLIDE first-tasks smallcode
 
-## First tasks in a new Grunt project (1)
+## <span class="icon-keyboard"></span> Creating my first Grunt project
 
 	.
 	├── Gruntfile.js
@@ -235,7 +237,7 @@ $ grunt foo
 
 !SLIDE first-tasks smallcode showterm
 
-## First tasks in a new Grunt project (1)
+## <span class="icon-keyboard"></span> Creating my first Grunt project 
 
 [[+]](http://showterm.io/a177bf1bdcc8033709a69)
 
@@ -243,7 +245,7 @@ $ grunt foo
 
 !SLIDE smallcode no-bullet-list
 
-## First tasks in a new Grunt project (2)
+## <span class="icon-keyboard"></span> Loading Grunt plugins
 
 - @@Steps@@:
 
@@ -254,7 +256,7 @@ $ grunt foo
 
 !SLIDE first-tasks smallcode
 
-## First tasks in a new Grunt project (2)
+## <span class="icon-keyboard"></span> Loading Grunt plugins
 
 	.
 	├── Gruntfile.js
@@ -276,7 +278,7 @@ $ npm install --save-dev @@grunt grunt-contrib-jshint@@
 
 !SLIDE #gruntfile1 first-tasks smallcode
 
-## First tasks in a new Grunt project (2)
+## <span class="icon-keyboard"></span> Loading Grunt plugins
 
 ```
 $ vi Gruntfile.js
@@ -298,11 +300,56 @@ $ grunt
 
 !SLIDE first-tasks smallcode showterm
 
-## First tasks in a new Grunt project (2)
+## <span class="icon-keyboard"></span> Loading Grunt plugins
 
 [[+]](http://showterm.io/7a31032086f0cc49f3cec)
 
 <iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
+
+<!-- ######################## CLEAR IDEAS GRUNTFILE.JS ######################## --> 
+
+!SLIDE clear-ideas-gruntfile no-bullet-list smallcode
+
+## Clear Ideas about Gruntfile.js
+
+- <span class="icon-code"></span> [`grunt.initConfig({...})`](http://gruntjs.com/api/grunt.config#grunt.config.init) → [Configuration object](http://gruntjs.com/sample-gruntfile)
+```
+grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json')
+    @@uglify@@: {
+        @@options@@: {
+            // the banner is inserted at the top of the output
+            banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        },
+        @@dist@@: {
+            @@files@@: {
+                'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+            }
+        }
+    }
+});
+```
+
+!SLIDE clear-ideas-gruntfile no-bullet-list smallcode
+
+## Clear Ideas about Gruntfile.js
+
+- <span class="icon-code"></span> Tasks are configured via `initConfig` using @@task-named properties@@ as key of a configuration object that has:
+	- @@[_targets_](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)@@ →  sets of files & options grouped (`dist`)
+	- @@[`options`](http://gruntjs.com/configuring-tasks#options)@@ →  object overrides general settings (also _target_ devel)
+	- @@[`files`](http://gruntjs.com/configuring-tasks#files)@@ →  src & dest files
+
+
+
+!SLIDE clear-ideas-gruntfile no-bullet-list smallcode
+
+## Clear Ideas about Gruntfile.js
+
+- <span class="icon-code"></span>[`grunt.loadNpmTasks(...);`](http://gruntjs.com/api/grunt.task#grunt.task.loadnpmtasks) → Load the Grunt plugins.
+	- `grunt.@@loadNpmTasks@@("grunt-contrib-uglify");`
+<br/><br/>
+- <span class="icon-code"></span>[`grunt.registerTask(...);`](http://gruntjs.com/api/grunt.task#grunt.task.registertask) → Create "alias" for already loaded/created tasks
+    - `grunt.@@registerTask@@('default', ['jshint', 'qunit', 'concat', 'uglify']);`
 
 <!-- ######################## MORE INFO ######################## --> 
 

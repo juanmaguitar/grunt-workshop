@@ -1,12 +1,9 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-```
-npm config set init.author.name "JuanMa Garrido"
-npm config set init.author.email JuanMa.Garrido@gmail.com
-npm config set init.author.url http://apuntesjs.com
-npm config set init.license MIT
-```
+## Extra tips
 
-```
-cat Gruntfile.js | grep -A 10 grunt-shower-markdown
-```
+Start quickly grunt projects w/ [project-scaffolding](http://gruntjs.com/project-scaffolding)
+
+    npm install -g grunt-init
+    git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+    grunt-init gruntfile
