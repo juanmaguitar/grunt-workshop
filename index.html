@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&ea4b14e75d29">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&d311b51aa3eb">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?85beabce6067">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?71607882de2c">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?51ed276d7a5b">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?522de530de42">
 	
-		<link rel="stylesheet" href="css/styles.css?d0c5c4c7fb78">
+		<link rel="stylesheet" href="css/styles.css?8ad0a7669477">
 	
 </head>
 <body class="list">
@@ -52,9 +52,11 @@
 <ol>
 <li>What is Grunt? <em>(5m)</em></li>
 <li>Clear Ideas about Grunt <em>(10m)</em></li>
-<li>Using Grunt in an existing project <em>(practice - 10m)</em></li>
-<li>First tasks in a new Grunt project <em>(practice - 30m)</em></li>
+<li><span class="icon-keyboard"></span> Using Grunt in an existing project <em>(10m)</em></li>
+<li><span class="icon-keyboard"></span> Creating my first Grunt project <em>(10m)</em></li>
+<li><span class="icon-keyboard"></span> Loading Grunt plugins <em>(10m)</em></li>
 <li>Clear Ideas about Gruntfile.js <em>(10m)</em></li>
+<li><span class="icon-keyboard"></span> Fully functional Grunt project <em>(...)</em></li>
 </ol>
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -181,7 +183,7 @@
 		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li>Grunt is not alone in the task-manager/build-tools world:<ul>
-<li class="next"><span class="devicons devicons-javascript_badge"></span> <a href="http://gruntjs.com/">grunt</a>, <a href="http://coffeescript.org/documentation/docs/cake.html">cake</a>, <a href="https://github.com/broccolijs/broccoli">broccoli</a>, <a href="">gulp</a> and <a href="https://gist.github.com/callumacrae/9231589">more</a></li>
+<li class="next"><span class="devicons devicons-javascript_badge"></span> <a href="http://gruntjs.com/">grunt</a>, <a href="http://coffeescript.org/documentation/docs/cake.html">cake</a>, <a href="https://github.com/broccolijs/broccoli">broccoli</a>, <a href="http://gulpjs.com/">gulp</a> and <a href="https://gist.github.com/callumacrae/9231589">more</a></li>
 <li class="next"><span class="devicons devicons-ruby"></span> <a href="https://github.com/ruby/rake">rake</a>, <a href="http://capistranorb.com/">capistrano</a></li>
 <li class="next"><span class="devicons devicons-python"></span> <a href="http://paver.github.io/paver/">paver</a>, <a href="https://github.com/rags/pynt">pynt</a></li>
 <li class="next"><span class="devicons devicons-java"></span> <a href="http://ant.apache.org/">ant</a></li>
@@ -202,7 +204,7 @@
 	</div></section>
 	
 	<section class="slide smallcode no-bullet-list" ><div>
-		<h2>Using Grunt in an existing project</h2>
+		<h2><span class="icon-keyboard"></span> Using Grunt in an existing project</h2>
 <ul>
 <li><p><mark>Steps</mark>:</p>
 <ol>
@@ -216,7 +218,7 @@
 	</div></section>
 	
 	<section class="slide smallcode" ><div>
-		<h2>Using Grunt in an existing project</h2>
+		<h2><span class="icon-keyboard"></span> Using Grunt in an existing project</h2>
 <pre><code>$ git --version</code>
 <code>$ node -v</code>
 <code>$ npm -v</code>
@@ -232,7 +234,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode showterm" ><div>
-		<h2>Using Grunt in an existing project</h2>
+		<h2><span class="icon-keyboard"></span> Using Grunt in an existing project</h2>
 <p><a href="http://showterm.io/5dbd18bd9b0a2c10caf7c">[+]</a></p>
 <iframe src="http://showterm.io/5dbd18bd9b0a2c10caf7c" width="700" height="380"></iframe>
 
@@ -241,7 +243,7 @@
 	</div></section>
 	
 	<section class="slide smallcode no-bullet-list" ><div>
-		<h2>First tasks in a new Grunt project (1)</h2>
+		<h2><span class="icon-keyboard"></span> Creating my first Grunt project</h2>
 <ul>
 <li><p><mark>Steps</mark>:</p>
 <ol>
@@ -256,7 +258,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode" ><div>
-		<h2>First tasks in a new Grunt project (1)</h2>
+		<h2><span class="icon-keyboard"></span> Creating my first Grunt project</h2>
 <pre><code>.</code>
 <code>├── Gruntfile.js</code>
 <code>├── package.json</code></pre><pre><code>$ mkdir project</code>
@@ -274,7 +276,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode showterm" ><div>
-		<h2>First tasks in a new Grunt project (1)</h2>
+		<h2><span class="icon-keyboard"></span> Creating my first Grunt project</h2>
 <p><a href="http://showterm.io/a177bf1bdcc8033709a69">[+]</a></p>
 <iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
 
@@ -282,7 +284,7 @@
 	</div></section>
 	
 	<section class="slide smallcode no-bullet-list" ><div>
-		<h2>First tasks in a new Grunt project (2)</h2>
+		<h2><span class="icon-keyboard"></span> Loading Grunt plugins</h2>
 <ul>
 <li><p><mark>Steps</mark>:</p>
 <ol>
@@ -297,7 +299,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode" ><div>
-		<h2>First tasks in a new Grunt project (2)</h2>
+		<h2><span class="icon-keyboard"></span> Loading Grunt plugins</h2>
 <pre><code>.</code>
 <code>├── Gruntfile.js</code>
 <code>├── package.json</code>
@@ -314,7 +316,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode" id="gruntfile1"><div>
-		<h2>First tasks in a new Grunt project (2)</h2>
+		<h2><span class="icon-keyboard"></span> Loading Grunt plugins</h2>
 <pre><code>$ vi Gruntfile.js</code>
 <code>    module.exports = function(grunt) {</code>
 <code>      <mark class="important">grunt.loadNpmTasks(&#39;grunt-contrib-jshint&#39;);</mark></code>
@@ -333,10 +335,61 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode showterm" ><div>
-		<h2>First tasks in a new Grunt project (2)</h2>
+		<h2><span class="icon-keyboard"></span> Loading Grunt plugins</h2>
 <p><a href="http://showterm.io/7a31032086f0cc49f3cec">[+]</a></p>
 <iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
 
+<!-- ######################## CLEAR IDEAS GRUNTFILE.JS ######################## --> 
+
+	</div></section>
+	
+	<section class="slide clear-ideas-gruntfile no-bullet-list smallcode" ><div>
+		<h2>Clear Ideas about Gruntfile.js</h2>
+<ul>
+<li><span class="icon-code"></span> <a href="http://gruntjs.com/api/grunt.config#grunt.config.init"><code>grunt.initConfig({...})</code></a> → <a href="http://gruntjs.com/sample-gruntfile">Configuration object</a><pre><code>grunt.initConfig({</code>
+<code>  pkg: grunt.file.readJSON(&#39;package.json&#39;)</code>
+<code>  <mark>uglify</mark>: {</code>
+<code>      <mark>options</mark>: {</code>
+<code>          // the banner is inserted at the top of the output</code>
+<code>          banner: &#39;/*! &lt;%= pkg.name %&gt; &lt;%= grunt.template.today(&quot;dd-mm-yyyy&quot;) %&gt; */\n&#39;</code>
+<code>      },</code>
+<code>      <mark>dist</mark>: {</code>
+<code>          <mark>files</mark>: {</code>
+<code>              &#39;dist/&lt;%= pkg.name %&gt;.min.js&#39;: [&#39;&lt;%= concat.dist.dest %&gt;&#39;]</code>
+<code>          }</code>
+<code>      }</code>
+<code>  }</code>
+<code>});</code></pre></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas-gruntfile no-bullet-list smallcode" ><div>
+		<h2>Clear Ideas about Gruntfile.js</h2>
+<ul>
+<li><span class="icon-code"></span> Tasks are configured via <code>initConfig</code> using <mark>task-named properties</mark> as key of a configuration object that has:<ul>
+<li><mark><a href="http://gruntjs.com/configuring-tasks#task-configuration-and-targets"><em>targets</em></a></mark> →  sets of files &amp; options grouped (<code>dist</code>)</li>
+<li><mark><a href="http://gruntjs.com/configuring-tasks#options"><code>options</code></a></mark> →  object overrides general settings (also <em>target</em> devel)</li>
+<li><mark><a href="http://gruntjs.com/configuring-tasks#files"><code>files</code></a></mark> →  src &amp; dest files</li>
+</ul>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas-gruntfile no-bullet-list smallcode" ><div>
+		<h2>Clear Ideas about Gruntfile.js</h2>
+<ul>
+<li><span class="icon-code"></span><a href="http://gruntjs.com/api/grunt.task#grunt.task.loadnpmtasks"><code>grunt.loadNpmTasks(...);</code></a> → Load the Grunt plugins.<ul>
+<li><code>grunt.<mark>loadNpmTasks</mark>(&quot;grunt-contrib-uglify&quot;);</code>
+<br/><br/></li>
+</ul>
+</li>
+<li><span class="icon-code"></span><a href="http://gruntjs.com/api/grunt.task#grunt.task.registertask"><code>grunt.registerTask(...);</code></a> → Create &quot;alias&quot; for already loaded/created tasks<ul>
+<li><code>grunt.<mark>registerTask</mark>(&#39;default&#39;, [&#39;jshint&#39;, &#39;qunit&#39;, &#39;concat&#39;, &#39;uglify&#39;]);</code></li>
+</ul>
+</li>
+</ul>
 <!-- ######################## MORE INFO ######################## --> 
 
 	</div></section>
