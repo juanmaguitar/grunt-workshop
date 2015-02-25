@@ -33,7 +33,8 @@ by [JuanMa Garrido](#trainer)
 1. What is Grunt? _(5m)_
 1. Clear Ideas about Grunt _(10m)_
 1. Using Grunt in an existing project _(practice - 10m)_
-1. First tasks w/ Grunt _(practice - 30m)_
+1. First tasks in a new Grunt project _(practice - 30m)_
+1. Clear Ideas about Gruntfile.js _(10m)_
 
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -65,7 +66,7 @@ and for Ruby developers...
 
 !SLIDE clear-ideas small no-bullet-list
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 - ?<span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via [npm](https://npmjs.org/), the [Node.js](http://nodejs.org/) package manager.
 - ?<span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the [Grunt's CLI](http://gruntjs.com/using-the-cli) → `npm install -g grunt-cli`
@@ -74,7 +75,7 @@ and for Ruby developers...
 
 !SLIDE clear-ideas no-bullet-list
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 <!-- 
 - ?<span class="icon-cogs"></span>The _grunt command line_ (globally) runs the grunt 'package' at `node_modules` (locally)
@@ -86,7 +87,7 @@ and for Ruby developers...
 	
 !SLIDE clear-ideas no-bullet-list smallcode
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 - <span class="icon-code"></span> [sample](http://browsenpm.org/package.json) [`package.json`](https://docs.npmjs.com/files/package.json):
 
@@ -105,7 +106,7 @@ and for Ruby developers...
 
 !SLIDE clear-ideas no-bullet-list smallcode smaller
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 - <span class="icon-code"></span> [sample](http://gruntjs.com/sample-gruntfile) `Gruntfile.js`:
 
@@ -133,7 +134,7 @@ module.exports = function(grunt) {
 
 !SLIDE clear-ideas no-bullet-list
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 - ?<span class="icon-briefcase"></span>**Productivity** →  with Grunt we can @@automate@@ everything in the client side: minify, checking, testing, concatenate, uglify, transcompile, deploy...
 - ?<span class="icon-globe"></span>**Community** →  more than [4000 grunt plugins](http://gruntjs.com/plugins) available  at NPM
@@ -141,7 +142,7 @@ module.exports = function(grunt) {
 
 !SLIDE clear-ideas no-bullet-list not-alone
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 - Grunt is not alone in the task-manager/build-tools world:
 	- ?<span class="devicons devicons-javascript_badge"></span> [grunt](http://gruntjs.com/), [cake](http://coffeescript.org/documentation/docs/cake.html), [broccoli](https://github.com/broccolijs/broccoli), [gulp]() and [more](https://gist.github.com/callumacrae/9231589)
@@ -152,17 +153,17 @@ module.exports = function(grunt) {
 
 !SLIDE clear-ideas no-bullet-list
 
-## Clear Ideas
+## Clear Ideas about Grunt
 
 - ?<span class="icon-calendar"></span>[Released in @@March 2012@@](http://bocoup.com/weblog/introducing-grunt/) by [Ben Allman ](http://twitter.com/cowboy)
 
 <!-- ######################## USING GRUNT ######################## --> 
 
-!SLIDE smallcode
+!SLIDE smallcode no-bullet-list
 
 ## Using Grunt in an existing project
 
-- Steps:
+- @@Steps@@:
 
 	1. Change to the project's root directory.
 	1. Install project dependencies with `npm install`
@@ -198,20 +199,20 @@ $ grunt serve
 
 <!-- ######################## FIRST TASKS ######################## --> 
 
-!SLIDE smallcode
+!SLIDE smallcode no-bullet-list
 
-## Using Grunt in an existing project
+## First tasks in a new Grunt project (1)
 
-- Steps:
+- @@Steps@@:
 
     1. Create a _project_ folder (and _src_ subfolder)
-    1. Create a `package.json` intereactively with `npm init`
+    1. Create a `package.json` interactively with `npm init`
     1. Create a simple `Gruntfile.js` (simple task, no plugin loading)
     1. Launch the task w/ Grunt
 
 !SLIDE first-tasks smallcode
 
-## First tasks w/ Grunt (1)
+## First tasks in a new Grunt project (1)
 
 	.
 	├── Gruntfile.js
@@ -234,15 +235,26 @@ $ grunt foo
 
 !SLIDE first-tasks smallcode showterm
 
-## First tasks w/ Grunt (1)
+## First tasks in a new Grunt project (1)
 
 [[+]](http://showterm.io/a177bf1bdcc8033709a69)
 
 <iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
 
+!SLIDE smallcode no-bullet-list
+
+## First tasks in a new Grunt project (2)
+
+- @@Steps@@:
+
+    1. Create a _project_ folder and _src_ subfolder
+    1. Create a `package.json` interactively with `npm init`
+    1. Create a `Gruntfile.js` (as defined [here](#gruntfile1))
+    1. Launch the default task w/ Grunt
+
 !SLIDE first-tasks smallcode
 
-## First tasks w/ Grunt (2)
+## First tasks in a new Grunt project (2)
 
 	.
 	├── Gruntfile.js
@@ -262,9 +274,9 @@ $ npm init
 $ npm install --save-dev @@grunt grunt-contrib-jshint@@
 ```
 
-!SLIDE first-tasks smallcode
+!SLIDE #gruntfile1 first-tasks smallcode
 
-## First tasks w/ Grunt (2)
+## First tasks in a new Grunt project (2)
 
 ```
 $ vi Gruntfile.js
@@ -286,7 +298,7 @@ $ grunt
 
 !SLIDE first-tasks smallcode showterm
 
-## First tasks w/ Grunt (2)
+## First tasks in a new Grunt project (2)
 
 [[+]](http://showterm.io/7a31032086f0cc49f3cec)
 
