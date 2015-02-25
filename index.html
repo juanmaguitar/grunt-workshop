@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&e35d29b18cbf">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&d8d20baaeea8">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?cabbcc11420e">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?c1aa7f29b6fe">
 	
-		<link rel="stylesheet" href="css/font-mfizz.css?9d815ea55317">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?d18b13e7a101">
 	
-		<link rel="stylesheet" href="css/styles.css?922d32f35174">
+		<link rel="stylesheet" href="css/styles.css?f1bda8b1b820">
 	
 </head>
 <body class="list">
@@ -34,13 +34,13 @@
 
 	</div></section>
 	
-	<section class="slide no-bullet-list" ><div>
+	<section class="slide no-bullet-list" id="trainer"><div>
 		<h2>Teacher: JuanMa Garrido</h2>
 <ul>
 <li><a class="icon-envelope" href="mailto:JuanMa.Garrido@gmail.com" target="_blank">JuanMa.Garrido@gmail.com</a></li>
 <li><a class="icon-twitter" href="https://twitter.com/juanmaguitar" target="_blank">@juanmaguitar</a></li>
 <li><a class="icon-linkedin" href="http://www.linkedin.com/in/juanmagarrido" target="_blank">http://www.linkedin.com/in/juanmagarrido</a></li>
-<li><a class="icon-github"href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
+<li><a class="icon-github" href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
 </ul>
 
 <!-- ######################## CONTENTS ######################## --> 
@@ -50,10 +50,10 @@
 	<section class="slide " id="contents"><div>
 		<h2>Contents</h2>
 <ol>
-<li>What is Grunt?</li>
-<li>Clear Ideas about Grunt</li>
-<li>Using Grunt in an existing project</li>
-<li>First tasks w/ Grunt</li>
+<li>What is Grunt? <em>(5m)</em></li>
+<li>Clear Ideas about Grunt <em>(10m)</em></li>
+<li>Using Grunt in an existing project <em>(practice - 10m)</em></li>
+<li>First tasks w/ Grunt <em>(practice - 30m)</em></li>
 </ol>
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -89,9 +89,9 @@
 	</div></section>
 	
 	<section class="slide what2" ><div>
-		<p>And for Ruby developers...</p>
+		<p>and for Ruby developers...</p>
 <blockquote>
-<p>Grunt is a javascript version of Ruby&#39;s <a href="https://github.com/ruby/rake">Rake</a></p>
+<p>Grunt is like a javascript version of Ruby&#39;s <a href="https://github.com/ruby/rake">Rake</a> and <a href="http://capistranorb.com/">Capistrano</a></p>
 </blockquote>
 <!-- ######################## CLEAR IDEAS ######################## --> 
 
@@ -125,7 +125,9 @@
 	
 	<section class="slide clear-ideas no-bullet-list smallcode" ><div>
 		<h2>Clear Ideas</h2>
-<p><span class="icon-code"></span> <a href="http://browsenpm.org/package.json">sample</a> <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a>:</p>
+<ul>
+<li><span class="icon-code"></span> <a href="http://browsenpm.org/package.json">sample</a> <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a>:</li>
+</ul>
 <pre><code>{</code>
 <code>  &quot;name&quot;: &quot;my-project-name&quot;,</code>
 <code>  &quot;version&quot;: &quot;0.1.0&quot;,</code>
@@ -140,7 +142,9 @@
 	
 	<section class="slide clear-ideas no-bullet-list smallcode smaller" ><div>
 		<h2>Clear Ideas</h2>
-<p><span class="icon-code"></span> <a href="http://gruntjs.com/sample-gruntfile">sample</a> <code>Gruntfile.js</code>:</p>
+<ul>
+<li><span class="icon-code"></span> <a href="http://gruntjs.com/sample-gruntfile">sample</a> <code>Gruntfile.js</code>:</li>
+</ul>
 <pre><code>module.exports = function(grunt) {</code>
 <code>  grunt.<mark>initConfig</mark>({</code>
 <code>    jshint: {</code>
@@ -165,19 +169,22 @@
 	<section class="slide clear-ideas no-bullet-list" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
-<li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, concatenate, uglify, transcompile, deploy...</li>
+<li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, checking, testing, concatenate, uglify, transcompile, deploy...</li>
 <li class="next"><span class="icon-globe"></span><strong>Community</strong> →  more than <a href="http://gruntjs.com/plugins">4000 grunt plugins</a> available  at NPM</li>
-<li class="next"><span class="icon-code"></span><strong>Transcompilation</strong> →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.)</li>
+<li class="next"><span class="icon-code"></span><strong>Transcompilation</strong> →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.) </li>
 </ul>
 
 	</div></section>
 	
-	<section class="slide clear-ideas no-bullet-list" ><div>
+	<section class="slide clear-ideas no-bullet-list not-alone" ><div>
 		<h2>Clear Ideas</h2>
 <ul>
 <li>Grunt is not alone in the task-manager/build-tools world:<ul>
-<li class="next"><i class="icon-javascript"></i> grunt, gulp</li>
-<li class="next"><span class="icon-file"></span><code><mark class="important">Gruntfile.js</mark></code>: The tasks are defined/configured and grunt plugins are loaded in this file </li>
+<li class="next"><span class="devicons devicons-javascript_badge"></span> <a href="http://gruntjs.com/">grunt</a>, <a href="http://coffeescript.org/documentation/docs/cake.html">cake</a>, <a href="https://github.com/broccolijs/broccoli">broccoli</a>, <a href="">gulp</a> and <a href="https://gist.github.com/callumacrae/9231589">more</a></li>
+<li class="next"><span class="devicons devicons-ruby"></span> <a href="https://github.com/ruby/rake">rake</a>, <a href="http://capistranorb.com/">capistrano</a></li>
+<li class="next"><span class="devicons devicons-python"></span> <a href="http://paver.github.io/paver/">paver</a>, <a href="https://github.com/rags/pynt">pynt</a></li>
+<li class="next"><span class="devicons devicons-java"></span> <a href="http://ant.apache.org/">ant</a></li>
+<li class="next"><span class="devicons devicons-php"></span> <a href="https://www.phing.info/">phing</a> </li>
 </ul>
 </li>
 </ul>
@@ -198,9 +205,9 @@
 <ul>
 <li><p>Steps:</p>
 <ol>
-<li class="next">Change to the project&#39;s root directory.</li>
-<li class="next">Install project dependencies with <code>npm install</code></li>
-<li class="next">Run Grunt with <code>grunt</code></li>
+<li>Change to the project&#39;s root directory.</li>
+<li>Install project dependencies with <code>npm install</code></li>
+<li>Run Grunt with <code>grunt</code></li>
 </ol>
 </li>
 </ul>
@@ -229,6 +236,21 @@
 <iframe src="http://showterm.io/5dbd18bd9b0a2c10caf7c" width="700" height="380"></iframe>
 
 <!-- ######################## FIRST TASKS ######################## --> 
+
+	</div></section>
+	
+	<section class="slide smallcode" ><div>
+		<h2>Using Grunt in an existing project</h2>
+<ul>
+<li><p>Steps:</p>
+<ol>
+<li>Create a <em>project</em> folder (and <em>src</em> subfolder)</li>
+<li>Create a <code>package.json</code> intereactively with <code>npm init</code></li>
+<li>Create a simple <code>Gruntfile.js</code> (simple task, no plugin loading)</li>
+<li>Launch the task w/ Grunt</li>
+</ol>
+</li>
+</ul>
 
 	</div></section>
 	
