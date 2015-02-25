@@ -335,7 +335,7 @@ grunt.initConfig({
 ## Clear Ideas about Gruntfile.js
 
 - <span class="icon-code"></span> Tasks are configured via `initConfig` using @@task-named properties@@ as key of a configuration object that has:
-	- @@[_targets_](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)@@ →  sets of files & options grouped (`dist`)
+	- @@[_targets_](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)@@ →  sets of files & options grouped (`dist`) →  `grunt uglify:dist`
 	- @@[`options`](http://gruntjs.com/configuring-tasks#options)@@ →  object overrides general settings (also _target_ devel)
 	- @@[`files`](http://gruntjs.com/configuring-tasks#files)@@ →  src & dest files
 
