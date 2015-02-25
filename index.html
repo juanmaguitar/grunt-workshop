@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&d8d20baaeea8">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&ea4b14e75d29">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?c1aa7f29b6fe">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?85beabce6067">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?d18b13e7a101">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?51ed276d7a5b">
 	
-		<link rel="stylesheet" href="css/styles.css?f1bda8b1b820">
+		<link rel="stylesheet" href="css/styles.css?d0c5c4c7fb78">
 	
 </head>
 <body class="list">
@@ -53,7 +53,8 @@
 <li>What is Grunt? <em>(5m)</em></li>
 <li>Clear Ideas about Grunt <em>(10m)</em></li>
 <li>Using Grunt in an existing project <em>(practice - 10m)</em></li>
-<li>First tasks w/ Grunt <em>(practice - 30m)</em></li>
+<li>First tasks in a new Grunt project <em>(practice - 30m)</em></li>
+<li>Clear Ideas about Gruntfile.js <em>(10m)</em></li>
 </ol>
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -98,7 +99,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas small no-bullet-list" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li class="next"><span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via <a href="https://npmjs.org/">npm</a>, the <a href="http://nodejs.org/">Node.js</a> package manager.</li>
 <li class="next"><span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
@@ -109,7 +110,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <!-- 
 - ?<span class="icon-cogs"></span>The _grunt command line_ (globally) runs the grunt 'package' at `node_modules` (locally)
 -->
@@ -124,7 +125,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list smallcode" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li><span class="icon-code"></span> <a href="http://browsenpm.org/package.json">sample</a> <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a>:</li>
 </ul>
@@ -141,7 +142,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list smallcode smaller" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li><span class="icon-code"></span> <a href="http://gruntjs.com/sample-gruntfile">sample</a> <code>Gruntfile.js</code>:</li>
 </ul>
@@ -167,7 +168,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, checking, testing, concatenate, uglify, transcompile, deploy...</li>
 <li class="next"><span class="icon-globe"></span><strong>Community</strong> →  more than <a href="http://gruntjs.com/plugins">4000 grunt plugins</a> available  at NPM</li>
@@ -177,7 +178,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list not-alone" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li>Grunt is not alone in the task-manager/build-tools world:<ul>
 <li class="next"><span class="devicons devicons-javascript_badge"></span> <a href="http://gruntjs.com/">grunt</a>, <a href="http://coffeescript.org/documentation/docs/cake.html">cake</a>, <a href="https://github.com/broccolijs/broccoli">broccoli</a>, <a href="">gulp</a> and <a href="https://gist.github.com/callumacrae/9231589">more</a></li>
@@ -192,7 +193,7 @@
 	</div></section>
 	
 	<section class="slide clear-ideas no-bullet-list" ><div>
-		<h2>Clear Ideas</h2>
+		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li class="next"><span class="icon-calendar"></span><a href="http://bocoup.com/weblog/introducing-grunt/">Released in <mark>March 2012</mark></a> by <a href="http://twitter.com/cowboy">Ben Allman </a></li>
 </ul>
@@ -200,10 +201,10 @@
 
 	</div></section>
 	
-	<section class="slide smallcode" ><div>
+	<section class="slide smallcode no-bullet-list" ><div>
 		<h2>Using Grunt in an existing project</h2>
 <ul>
-<li><p>Steps:</p>
+<li><p><mark>Steps</mark>:</p>
 <ol>
 <li>Change to the project&#39;s root directory.</li>
 <li>Install project dependencies with <code>npm install</code></li>
@@ -239,13 +240,13 @@
 
 	</div></section>
 	
-	<section class="slide smallcode" ><div>
-		<h2>Using Grunt in an existing project</h2>
+	<section class="slide smallcode no-bullet-list" ><div>
+		<h2>First tasks in a new Grunt project (1)</h2>
 <ul>
-<li><p>Steps:</p>
+<li><p><mark>Steps</mark>:</p>
 <ol>
 <li>Create a <em>project</em> folder (and <em>src</em> subfolder)</li>
-<li>Create a <code>package.json</code> intereactively with <code>npm init</code></li>
+<li>Create a <code>package.json</code> interactively with <code>npm init</code></li>
 <li>Create a simple <code>Gruntfile.js</code> (simple task, no plugin loading)</li>
 <li>Launch the task w/ Grunt</li>
 </ol>
@@ -255,7 +256,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode" ><div>
-		<h2>First tasks w/ Grunt (1)</h2>
+		<h2>First tasks in a new Grunt project (1)</h2>
 <pre><code>.</code>
 <code>├── Gruntfile.js</code>
 <code>├── package.json</code></pre><pre><code>$ mkdir project</code>
@@ -273,15 +274,30 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode showterm" ><div>
-		<h2>First tasks w/ Grunt (1)</h2>
+		<h2>First tasks in a new Grunt project (1)</h2>
 <p><a href="http://showterm.io/a177bf1bdcc8033709a69">[+]</a></p>
 <iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
 
 
 	</div></section>
 	
+	<section class="slide smallcode no-bullet-list" ><div>
+		<h2>First tasks in a new Grunt project (2)</h2>
+<ul>
+<li><p><mark>Steps</mark>:</p>
+<ol>
+<li>Create a <em>project</em> folder and <em>src</em> subfolder</li>
+<li>Create a <code>package.json</code> interactively with <code>npm init</code></li>
+<li>Create a <code>Gruntfile.js</code> (as defined <a href="#gruntfile1">here</a>)</li>
+<li>Launch the default task w/ Grunt</li>
+</ol>
+</li>
+</ul>
+
+	</div></section>
+	
 	<section class="slide first-tasks smallcode" ><div>
-		<h2>First tasks w/ Grunt (2)</h2>
+		<h2>First tasks in a new Grunt project (2)</h2>
 <pre><code>.</code>
 <code>├── Gruntfile.js</code>
 <code>├── package.json</code>
@@ -297,8 +313,8 @@
 <code>$ npm install --save-dev <mark>grunt grunt-contrib-jshint</mark></code></pre>
 	</div></section>
 	
-	<section class="slide first-tasks smallcode" ><div>
-		<h2>First tasks w/ Grunt (2)</h2>
+	<section class="slide first-tasks smallcode" id="gruntfile1"><div>
+		<h2>First tasks in a new Grunt project (2)</h2>
 <pre><code>$ vi Gruntfile.js</code>
 <code>    module.exports = function(grunt) {</code>
 <code>      <mark class="important">grunt.loadNpmTasks(&#39;grunt-contrib-jshint&#39;);</mark></code>
@@ -317,7 +333,7 @@
 	</div></section>
 	
 	<section class="slide first-tasks smallcode showterm" ><div>
-		<h2>First tasks w/ Grunt (2)</h2>
+		<h2>First tasks in a new Grunt project (2)</h2>
 <p><a href="http://showterm.io/7a31032086f0cc49f3cec">[+]</a></p>
 <iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
 
