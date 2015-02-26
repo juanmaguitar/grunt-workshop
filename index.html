@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&2afe6a02d0d2">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&bfc56d35c66d">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?e0335350da0e">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?ca270cfa19fc">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?aef342fc80df">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?6e5749dc7914">
 	
-		<link rel="stylesheet" href="css/styles.css?4ec6a18fb8e9">
+		<link rel="stylesheet" href="css/styles.css?b59cb93a7e57">
 	
 </head>
 <body class="list">
@@ -367,9 +367,9 @@
 	<section class="slide clear-ideas-gruntfile no-bullet-list smallcode" ><div>
 		<h2>Clear Ideas about Gruntfile.js</h2>
 <ul>
-<li><span class="icon-code"></span> Tasks are configured via <code>initConfig</code> using <mark>task-named properties</mark> as key of a configuration object that has:<ul>
-<li><mark><a href="http://gruntjs.com/configuring-tasks#task-configuration-and-targets"><em>targets</em></a></mark> →  sets of files &amp; options grouped (<code>dist</code>) →  <code>grunt uglify:dist</code></li>
-<li><mark><a href="http://gruntjs.com/configuring-tasks#options"><code>options</code></a></mark> →  object overrides general settings (also <em>target</em> devel)</li>
+<li><span class="icon-code"></span> Tasks are <em>configured</em> via <code>initConfig</code> using <mark>task-named properties</mark> as key of a configuration object that has:<ul>
+<li><mark><a href="http://gruntjs.com/configuring-tasks#task-configuration-and-targets"><em>targets</em></a></mark> →  groups of files/options (<code>dist</code>) →  <code>grunt uglify:dist</code></li>
+<li><mark><a href="http://gruntjs.com/configuring-tasks#options"><code>options</code></a></mark> →  custom setting overriding general settings (also <em>target</em> devel)</li>
 <li><mark><a href="http://gruntjs.com/configuring-tasks#files"><code>files</code></a></mark> →  src &amp; dest files</li>
 </ul>
 </li>
@@ -385,7 +385,7 @@
 <br/><br/></li>
 </ul>
 </li>
-<li><span class="icon-code"></span><a href="http://gruntjs.com/api/grunt.task#grunt.task.registertask"><code>grunt.registerTask(...);</code></a> → Create &quot;alias&quot; for already loaded/created tasks<ul>
+<li><span class="icon-code"></span><a href="http://gruntjs.com/api/grunt.task#grunt.task.registertask"><code>grunt.registerTask(...);</code></a> → Aliases for already loaded/created tasks<ul>
 <li><code>grunt.<mark>registerTask</mark>(&#39;default&#39;, [&#39;jshint&#39;, &#39;qunit&#39;, &#39;concat&#39;, &#39;uglify&#39;]);</code></li>
 </ul>
 </li>
