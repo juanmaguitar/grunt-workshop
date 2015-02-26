@@ -13,7 +13,7 @@
 #contents h2 {
   margin-bottom: 45px; }
 /* line 12, ../../src/scss/styles.scss */
-#contents .icon-keyboard:before {
+#contents .icon-keyboard:before, #contents .icon-laptop:before {
   margin-left: 52px;
   margin-right: -15px; }
 

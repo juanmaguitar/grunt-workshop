@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&bfc56d35c66d">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&fdbdc9c4c0ea">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?ca270cfa19fc">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?d6f452d5ca33">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?6e5749dc7914">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?f3a710e10ce5">
 	
-		<link rel="stylesheet" href="css/styles.css?b59cb93a7e57">
+		<link rel="stylesheet" href="css/styles.css?34ddb7b18e19">
 	
 </head>
 <body class="list">
@@ -56,7 +56,7 @@
 <li><span class="icon-keyboard"></span> Creating my first Grunt project <em>(10m)</em></li>
 <li><span class="icon-keyboard"></span> Loading Grunt plugins <em>(10m)</em></li>
 <li>Clear Ideas about Gruntfile.js <em>(10m)</em></li>
-<li><span class="icon-keyboard"></span> Fully functional Grunt project <em>(...)</em></li>
+<li><span class="icon-laptop"></span> Fully functional Grunt project <em>(...)</em></li>
 </ol>
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
@@ -104,9 +104,9 @@
 		<h2>Clear Ideas about Grunt</h2>
 <ul>
 <li class="next"><span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via <a href="https://npmjs.org/">npm</a>, the <a href="http://nodejs.org/">Node.js</a> package manager.</li>
-<li class="next"><span class="icon-terminal"></span>To use Grunt from comand line we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
-<li class="next"><span class="icon-terminal"></span>Inside the project we install Grunt and Grunt-plugins as node modules → <code>npm install --save-dev grunt grunt-contrib-jshint</code></li>
-<li class="next"><span class="icon-terminal"></span>To install Grunt and Grunt-plugins of an existing project we use → <code>npm install</code></li>
+<li class="next"><span class="icon-terminal"></span>To use <em>Grunt from comand line</em> we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
+<li class="next"><span class="icon-terminal"></span>In <em>new projects</em> we install Grunt and Grunt-plugins as node modules → <code>npm install --save-dev grunt grunt-contrib-jshint</code></li>
+<li class="next"><span class="icon-terminal"></span>In <em>existing Grunt projects</em> we install Grunt and Grunt-plugins with → <code>npm install</code></li>
 </ul>
 
 	</div></section>
@@ -172,7 +172,7 @@
 	<section class="slide clear-ideas no-bullet-list" ><div>
 		<h2>Clear Ideas about Grunt</h2>
 <ul>
-<li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the client side: minify, checking, testing, concatenate, uglify, transcompile, deploy...</li>
+<li class="next"><span class="icon-briefcase"></span><strong>Productivity</strong> →  with Grunt we can <mark>automate</mark> everything in the <em>development environment</em>: minify, checking, testing, concatenate, uglify, transcompile, deploy...</li>
 <li class="next"><span class="icon-globe"></span><strong>Community</strong> →  more than <a href="http://gruntjs.com/plugins">4000 grunt plugins</a> available  at NPM</li>
 <li class="next"><span class="icon-code"></span><strong>Transcompilation</strong> →  Ease the source-to-source compilation (Haml, Jade, Sass, LESS, Stylus, CoffeeScript, Dart, TypeScript, and more.) </li>
 </ul>
@@ -389,6 +389,60 @@
 <li><code>grunt.<mark>registerTask</mark>(&#39;default&#39;, [&#39;jshint&#39;, &#39;qunit&#39;, &#39;concat&#39;, &#39;uglify&#39;]);</code></li>
 </ul>
 </li>
+</ul>
+<!-- ######################## FINAL PROJECT ######################## --> 
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list" ><div>
+		<h2><span class="icon-laptop"></span> Fully functional Grunt project</h2>
+<pre><code>├── Gruntfile.js</code>
+<code>├── dist</code>
+<code>├── index.html</code>
+<code>├── package.json</code>
+<code>├── src</code>
+<code>│   ├── js</code>
+<code>│   │   ├── bar.js</code>
+<code>│   │   └── foo.js</code>
+<code>│   ├── scss</code>
+<code>│   │   └── styles.scss</code>
+<code>│   └── vendor</code>
+<code>│       └── jquery-2.1.3.js</code>
+<code>└── test</code>
+<code>  ├── barSpec.js</code>
+<code>  └── fooSpec.js</code></pre>
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list" ><div>
+		<h2><span class="icon-laptop"></span> Fully functional Grunt project</h2>
+<ul>
+<li><p><em>Given the previous structure, create a Grunt project that provides the following tasks:</em></p>
+</li>
+<li><p><span class="icon-terminal"></span> <code>grunt concat</code> → concatenate all <em>.js</em> files  at <em>src</em> folder (using <code>;</code> as separator) in a npm-project-named <em>.js</em> file placed at <em>dist</em> folder</p>
+</li>
+<li><span class="icon-terminal"></span> <code>grunt uglify</code> → <em>uglify</em>  file generated by <em>concat</em> task into a new <em>.min.js</em> file placed at <em>dist</em> folder</li>
+<li><span class="icon-terminal"></span> <code>grunt jshint</code> → validate the js code (Gruntfile.js, <em>src/js</em>, <em>test</em>)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list" ><div>
+		<h2><span class="icon-laptop"></span> Fully functional Grunt project</h2>
+<ul>
+<li><span class="icon-terminal"></span> <code>grunt compass</code> → compile <em>src/styles.scss</em> file into a <em>dist/styles.css</em></li>
+<li><p><span class="icon-terminal"></span> <code>grunt</code> or <code>grunt default</code>→ launches all previous tasks (jshint, concat, uglify, compass)</p>
+</li>
+<li><p><span class="icon-terminal"></span> <code>grunt watch</code> → watch any change done at <em>Gruntfile.js</em> or <em>src</em> folder and launches <em>default</em> task w/ new changes</p>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list" ><div>
+		<h2><span class="icon-laptop"></span> Fully functional Grunt project (extras)</h2>
+<ul>
+<li><span class="icon-terminal"></span> <code>grunt jasmine</code> → launch all jasmine tests at <em>test</em> folder (add it to <em>default</em> task)</li>
+<li><span class="icon-terminal"></span> <code>grunt serve</code> → launch a local server at <em>localhost:8081</em> (after launching <em>default</em> task)</li>
 </ul>
 <!-- ######################## MORE INFO ######################## --> 
 
