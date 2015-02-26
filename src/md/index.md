@@ -334,9 +334,9 @@ grunt.initConfig({
 
 ## Clear Ideas about Gruntfile.js
 
-- <span class="icon-code"></span> Tasks are configured via `initConfig` using @@task-named properties@@ as key of a configuration object that has:
-	- @@[_targets_](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)@@ →  sets of files & options grouped (`dist`) →  `grunt uglify:dist`
-	- @@[`options`](http://gruntjs.com/configuring-tasks#options)@@ →  object overrides general settings (also _target_ devel)
+- <span class="icon-code"></span> Tasks are _configured_ via `initConfig` using @@task-named properties@@ as key of a configuration object that has:
+	- @@[_targets_](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)@@ →  groups of files/options (`dist`) →  `grunt uglify:dist`
+	- @@[`options`](http://gruntjs.com/configuring-tasks#options)@@ →  custom setting overriding general settings (also _target_ devel)
 	- @@[`files`](http://gruntjs.com/configuring-tasks#files)@@ →  src & dest files
 
 
@@ -348,7 +348,7 @@ grunt.initConfig({
 - <span class="icon-code"></span>[`grunt.loadNpmTasks(...);`](http://gruntjs.com/api/grunt.task#grunt.task.loadnpmtasks) → Load the Grunt plugins.
 	- `grunt.@@loadNpmTasks@@("grunt-contrib-uglify");`
 <br/><br/>
-- <span class="icon-code"></span>[`grunt.registerTask(...);`](http://gruntjs.com/api/grunt.task#grunt.task.registertask) → Create "alias" for already loaded/created tasks
+- <span class="icon-code"></span>[`grunt.registerTask(...);`](http://gruntjs.com/api/grunt.task#grunt.task.registertask) → Aliases for already loaded/created tasks
     - `grunt.@@registerTask@@('default', ['jshint', 'qunit', 'concat', 'uglify']);`
 
 <!-- ######################## MORE INFO ######################## --> 
