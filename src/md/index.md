@@ -397,8 +397,7 @@ grunt.initConfig({
 ## <span class="icon-laptop"></span> Fully functional Grunt project (extras)
 
 - <span class="icon-terminal"></span> `grunt jasmine` → launch all jasmine tests at _test_ folder (add it to _default_ task)
-
-
+- <span class="icon-terminal"></span> `grunt serve` → launch a local server at _localhost:8081_ (after launching _default_ task)
 
 <!-- ######################## MORE INFO ######################## --> 
 
