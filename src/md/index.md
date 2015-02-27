@@ -179,6 +179,7 @@ module.exports = function(grunt) {
 $ git --version
 $ node -v
 $ npm -v
+$ npm install -g grunt-cli
 $ git clone https://github.com/juanmaguitar/grunt-workshop.git
 $ cd grunt-workshop
 $ npm install
@@ -268,10 +269,6 @@ $ grunt foo
 $ mkdir project2
 $ cd project2/
 $ mkdir src
-$ npm config set init.author.name "JuanMa Garrido"
-$ npm config set init.author.email JuanMa.Garrido@gmail.com
-$ npm config set init.author.url http://apuntesjs.com
-$ npm config set init.license MIT
 $ npm init
 $ npm install --save-dev @@grunt grunt-contrib-jshint@@
 ```
