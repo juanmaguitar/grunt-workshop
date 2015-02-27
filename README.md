@@ -52,4 +52,4 @@ This work by author is licensed under a [Creative Commons Attribution-ShareAlike
 
 You can copy, distribute, publish and modify this material by attributing to _Juan Manuel Garrido_ the original authoring and referencing [this repository](https://github.com/juanmaguitar/grunt-workshop). If you modify or create something from this material, you can distribute the resulting work only under the same license or another compatible one. Some of this conditions may not be applied if you get permission from the author.  If you reuse or distribute this work, the license terms of the work must be shown clearly. The best way to do this is by showing a link to the license [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US). 
 
-_Copyright &copy;2015 Juan Manuel Garrido _
+_Copyright &copy;2015 Juan Manuel Garrido_
