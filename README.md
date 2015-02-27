@@ -18,7 +18,7 @@ You can access to the presentation used in the workshop from the URL : [http://j
 
 - To [start using Grunt](http://gruntjs.com/getting-started) we should have installed in our machine Node.js (>= 0.8.0. ) and NPM
 - Remember that **first thing to do to start using grunt** is installing the CLI package globally → `npm install -g grunt-cli`
-- If you have issues when launching `npm install` in existing projects remember to check the writable permissions of your folder
+- If you have issues when launching `npm install` in existing projects remember to check the writable permissions of that folder
 - If you have issues w/ the [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass) have a look at [these solutions](http://stackoverflow.com/questions/23042166/grunt-contrib-sass-not-working-with-compass)
 
 ## Extra tips
