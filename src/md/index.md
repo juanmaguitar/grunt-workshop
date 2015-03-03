@@ -48,6 +48,10 @@ by [JuanMa Garrido](#trainer)
 
 > Grunt is a @@Build Tool@@ 
 
+!SLIDE what
+
+> Grunt is a @@Command Line@@ 
+
 !SLIDE what3
 
 > Grunt is a (@@Javascript@@) @@Task Runner@@. Some of these tasks @@Build@@ stuff (transcompiling, deploy...)
@@ -62,7 +66,7 @@ by [JuanMa Garrido](#trainer)
 
 and for Ruby developers...
 
-> Grunt is like a javascript version of Ruby's [Rake](https://github.com/ruby/rake) and [Capistrano](http://capistranorb.com/)
+> Grunt is like a javascript version of Ruby's [Rake](https://github.com/ruby/rake)
 
 <!-- ######################## CLEAR IDEAS ######################## --> 
 
