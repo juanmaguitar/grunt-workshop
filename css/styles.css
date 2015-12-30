@@ -103,7 +103,7 @@ h6 {
   */ }
   /* line 105, ../../src/scss/styles.scss */
   #Cover {
-    background: url("../img/logo-ironhack-font.png") no-repeat scroll right 410px top 375px #e48632; }
+    background: url("../img/logo-ironhack-font.png") no-repeat scroll right 410px top 375px #E48632; }
   /* line 108, ../../src/scss/styles.scss */
   #Cover > div {
     top: 0; }
@@ -240,7 +240,7 @@ h6 {
   display: inline; }
 /* line 206, ../../src/scss/styles.scss */
 .slide {
-  background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px white; }
+  background: url("../img/ironhack-logo.png") no-repeat top 25px right 25px #FFF; }
 
 /* line 213, ../../src/scss/styles.scss */
 .showterm a {
