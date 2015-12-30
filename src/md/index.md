@@ -15,7 +15,7 @@ by [JuanMa Garrido](#trainer)
 
 !SLIDE #trainer no-bullet-list
 
-##Teacher: JuanMa Garrido
+## Teacher: JuanMa Garrido
  
 <ul>
 <li><a class="icon-envelope" href="mailto:JuanMa.Garrido@gmail.com" target="_blank">JuanMa.Garrido@gmail.com</a></li>
@@ -28,7 +28,7 @@ by [JuanMa Garrido](#trainer)
 
 !SLIDE #contents
 
-##Contents
+## Contents
 
 1. What is Grunt? _(5m)_
 1. Clear Ideas about Grunt _(10m)_
